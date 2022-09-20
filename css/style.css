@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .navbar div .contact-but {
+  padding: 17px 20px;
+  background-color: #5222D0;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+body .navbar div a {
+  margin-left: 50px;
+}
+
+body .navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+body .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5%;
+}
+
+body .intro div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .intro div h1 {
+  font-size: 72px;
+  color: #5222D0;
+}
+
+body .intro div p {
+  line-height: 1.3;
+  color: #2c2c2c;
+}
+
+body .intro div .dev {
+  letter-spacing: 2px;
+  color: #292929;
+}
+
+body .intro div a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #5222D0;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+body .intro img {
+  width: 40%;
+}
+
+body .arrow {
+  margin-top: 4.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .about h2 {
+  margin-bottom: 2%;
+}
+
+body .about .about-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+body .about .about-txt div {
+  background-color: #5222D0;
+  width: 8px;
+  height: 100px;
+  margin-right: 1%;
+}
+
+body .card-cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+body .card-cont .card img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+body .card-cont .card .card-txt {
+  background-color: #F5F2FD;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
