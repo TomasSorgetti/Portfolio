@@ -122,7 +122,7 @@ body .about .about-txt div {
   margin-right: 1%;
 }
 
-body .card-cont {
+body .proyects .card-cont {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -130,13 +130,68 @@ body .card-cont {
   gap: 25px;
 }
 
-body .card-cont .card img {
+body .proyects .card-cont .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 4px 0 10px rgba(82, 34, 208, 0.2);
+          box-shadow: 4px 0 10px rgba(82, 34, 208, 0.2);
+}
+
+body .proyects .card-cont .card img {
   width: 100%;
   vertical-align: middle;
 }
 
-body .card-cont .card .card-txt {
+body .proyects .card-cont .card .card-txt {
   background-color: #F5F2FD;
+}
+
+body .proyects .card-cont .card .card-txt h4 {
+  margin: 10px 15px;
+}
+
+body .proyects .card-cont .card .card-txt p {
+  line-height: 1.3;
+  margin: 10px 15px;
+}
+
+body .proyects .card-cont .card .card-txt .card-sk {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .proyects .card-cont .card .card-txt .card-sk p {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: #5222D0;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+body .proyects .github-link {
+  margin-top: 8%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .proyects .github-link a {
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #5222D0;
+  border-radius: 6px;
 }
 /*# sourceMappingURL=style.css.map */
