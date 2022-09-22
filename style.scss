@@ -1,6 +1,7 @@
 
 $colorParrafo: rgb(44, 44, 44);
 $colorParrafo1: #0000;
+$colorParrafo2: rgb(75, 75, 75);
 $colorPrincipal: #5222D0;
 $colorCards: #F5F2FD;
 
@@ -13,6 +14,10 @@ $colorCards: #F5F2FD;
 body{
     width: 80%;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;    
+
+    // navbar
+
     .navbar{
         display: flex;
         justify-content: space-between;
@@ -35,6 +40,9 @@ body{
             color: black;
         }
     }
+
+    // introduction
+
     .intro{
         display: flex;
         justify-content: space-between;
@@ -45,16 +53,18 @@ body{
             justify-content: center;
             align-items: flex-start;
             h1{
-                font-size: 72px;
+                font-size: 54px;
                 color: $colorPrincipal;
+                margin-bottom: 5px;
+                font-family: 'Fraunces', serif;
             }
             p{
                 line-height: 1.3;
-                color: $colorParrafo;
+                color: $colorParrafo2;
             }
             .dev{
                 letter-spacing: 2px;
-                color:rgb(41, 41, 41);
+                color: $colorParrafo;
             }
             a{
                 padding: 15px 20px;
@@ -74,22 +84,34 @@ body{
         display: flex;
         justify-content: center;
     }
+
+    // about me
+
     .about{
         h2{
-            margin-bottom: 2%;
+            margin-bottom: 3%;
         }
         .about-txt{
             display: flex;
-            margin-bottom: 2%;
+            margin-bottom: 5%;
             div{
                 background-color: $colorPrincipal;
                 width: 8px;
                 height: 100px;
                 margin-right: 1%;
             }
+            p{
+                color: $colorParrafo2;
+            }
         }
     }
+
+    // Proyects
+
     .proyects{
+        h3{
+            margin-bottom: 3%;
+        }
         .card-cont{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -110,7 +132,8 @@ body{
                     }
                     p{
                         line-height: 1.3;    
-                        margin: 10px 15px;                    
+                        margin: 10px 15px; 
+                        color: $colorParrafo2;                   
                     }
                     .card-sk{
                         margin-top: 10px;
@@ -141,6 +164,9 @@ body{
             }
         }       
     }
+
+    // Skills
+
     .skills{
         margin-top: 5%;
         margin-bottom: 5%;
@@ -156,12 +182,20 @@ body{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: space-between;
                 img{
                     margin-bottom: 6%;
+                    width: 40%;
+                }
+                p{
+                    color: $colorParrafo2;
                 }
             }
         }
     }
+
+    // Footer
+
     .footer{
         height: 250px;
         display: flex;
@@ -170,15 +204,19 @@ body{
         justify-content: center;
         .icons-cont{
             display: flex;
+            justify-content: space-evenly;
             margin-bottom: 3%;
+            width: 400px;
             .icons{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 80px;
                 i{
                     font-size: 35px;
                     color: $colorPrincipal;
+                }
+                p{
+                    color: $colorParrafo2;
                 }
             }
         }
@@ -190,5 +228,10 @@ body{
                 margin: 10px;
             }
         }
+        p{
+            color: $colorParrafo2;
+        }
     }
 }
+
+// Media
