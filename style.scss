@@ -141,5 +141,54 @@ body{
             }
         }       
     }
-
+    .skills{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        h4{
+            margin-bottom: 5%;
+        }
+        .logo-cont{
+            width: 100%;
+            margin-bottom: 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            .logo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    margin-bottom: 6%;
+                }
+            }
+        }
+    }
+    .footer{
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .icons-cont{
+            display: flex;
+            margin-bottom: 3%;
+            .icons{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80px;
+                i{
+                    font-size: 35px;
+                    color: $colorPrincipal;
+                }
+            }
+        }
+        .footer-links{
+            margin-bottom: 2%;
+            a{
+                text-decoration: none;
+                color: black;
+                margin: 10px;
+            }
+        }
+    }
 }

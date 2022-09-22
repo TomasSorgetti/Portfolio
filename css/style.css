@@ -194,4 +194,92 @@ body .proyects .github-link a {
   background-color: #5222D0;
   border-radius: 6px;
 }
+
+body .skills {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+body .skills h4 {
+  margin-bottom: 5%;
+}
+
+body .skills .logo-cont {
+  width: 100%;
+  margin-bottom: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+body .skills .logo-cont .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .skills .logo-cont .logo img {
+  margin-bottom: 6%;
+}
+
+body .footer {
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .footer .icons-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3%;
+}
+
+body .footer .icons-cont .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+}
+
+body .footer .icons-cont .icons i {
+  font-size: 35px;
+  color: #5222D0;
+}
+
+body .footer .footer-links {
+  margin-bottom: 2%;
+}
+
+body .footer .footer-links a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
 /*# sourceMappingURL=style.css.map */
