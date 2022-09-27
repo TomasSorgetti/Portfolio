@@ -177,4 +177,6 @@ body {
   body main .navbar p {
     font-size: 10px; }
   body main .navbar .nav-links .proyects-link {
-    display: none; } }
+    display: none; }
+  body main .proyects .card-cont .card .card-txt .card-sk p {
+    font-size: 10px; } }
