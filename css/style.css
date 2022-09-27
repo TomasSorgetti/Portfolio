@@ -12,20 +12,22 @@ body {
   body .navbar {
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 18px;
     height: 100px;
     align-items: center;
     padding: 32px; }
+    body .navbar p {
+      font-size: 28px;
+      color: #3d318c; }
     body .navbar div .contact-but {
       padding: 17px 20px;
       background-color: #3d318c;
       color: #ffffff;
-      border-radius: 6px; }
+      border-radius: 6px;
+      margin-left: 20px; }
     body .navbar div a {
-      margin-left: 50px; }
-    body .navbar a {
       text-decoration: none;
-      color: black; }
+      color: #4b4b4b; }
   body main {
     width: 80%;
     margin: 0 auto;
@@ -147,7 +149,8 @@ body {
         align-items: center; }
         body .footer .icons-cont .icons i {
           font-size: 35px;
-          color: #3d318c; }
+          color: #3d318c;
+          cursor: pointer; }
     body .footer .footer-links {
       margin-bottom: 2%; }
       body .footer .footer-links a {
@@ -165,3 +168,13 @@ body {
   body main .skills .logo-cont {
     grid-template-columns: 1fr 1fr;
     row-gap: 50px; } }
+
+@media screen and (max-width: 800px) {
+  body main .intro {
+    flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  body main .navbar p {
+    font-size: 10px; }
+  body main .navbar .nav-links .proyects-link {
+    display: none; } }

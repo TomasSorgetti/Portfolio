@@ -24,25 +24,29 @@ body{
     .navbar{
         display: flex;
         justify-content: space-between;
-        font-size: 20px;
+        font-size: 18px;
         height: 100px;
         align-items: center;
         padding: 32px;
+        p{
+            font-size: 28px;
+            color: $colorPrincipal;
+        }
         div{
             .contact-but{
                 padding: 17px 20px;
                 background-color: $colorPrincipal;
                 color: #ffffff;
                 border-radius: 6px;
-            }
+                margin-left: 20px;
+            }     
             a{
-                margin-left: 50px;
+                text-decoration: none;
+                color: $colorParrafo2;
+                
             }
         }
-        a{
-            text-decoration: none;
-            color: black;
-        }
+
     }
     main{
         width: 80%;
@@ -215,6 +219,7 @@ body{
                 i{
                     font-size: 35px;
                     color: $colorPrincipal;
+                    cursor: pointer;
                 }
             }
         }
@@ -253,4 +258,30 @@ body{
             }
         }
     }
+}
+@media screen and (max-width:800px) {
+    body{
+        main{
+            .intro{
+                flex-direction: column;
+            }
+        }
+    }    
+}
+@media screen and (max-width: 600px) {
+    body{
+        main{
+            .navbar{
+                p{
+                    font-size: 10px;
+                }
+                .nav-links{
+                    .proyects-link{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
 }
