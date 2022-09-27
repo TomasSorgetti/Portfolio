@@ -2,8 +2,8 @@
 $colorParrafo: rgb(44, 44, 44);
 $colorParrafo1: #0000;
 $colorParrafo2: rgb(75, 75, 75);
-$colorPrincipal: #5222D0;
-$colorCards: #F5F2FD;
+$colorPrincipal: #3d318c;
+$colorCards: #f3f2fd;
 
 
 *{
@@ -12,10 +12,13 @@ $colorCards: #F5F2FD;
     box-sizing: border-box;
 }
 body{
-    width: 80%;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;    
-
+    font-family: 'Montserrat', sans-serif;  
+    p{
+        line-height: 1.7;
+        color: $colorParrafo2;
+        max-width: 70ch;
+    }
+    
     // navbar
 
     .navbar{
@@ -24,6 +27,7 @@ body{
         font-size: 20px;
         height: 100px;
         align-items: center;
+        padding: 32px;
         div{
             .contact-but{
                 padding: 17px 20px;
@@ -40,159 +44,156 @@ body{
             color: black;
         }
     }
+    main{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1200px;
 
-    // introduction
+        // introduction
 
-    .intro{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5%;
-        div{
+        .intro{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            h1{
-                font-size: 54px;
-                color: $colorPrincipal;
-                margin-bottom: 5px;
-                font-family: 'Fraunces', serif;
-            }
-            p{
-                line-height: 1.3;
-                color: $colorParrafo2;
-            }
-            .dev{
-                letter-spacing: 2px;
-                color: $colorParrafo;
-            }
-            a{
-                padding: 15px 20px;
-                text-decoration: none;
-                color: #ffffff;
-                background-color: $colorPrincipal;
-                border-radius: 6px;
-                margin-top: 20px;
-            }
-        }
-        img{
-            width: 40%;
-        }
-    }
-    .arrow{
-        margin-top: 4.5%;
-        display: flex;
-        justify-content: center;
-    }
-
-    // about me
-
-    .about{
-        h2{
-            margin-bottom: 3%;
-        }
-        .about-txt{
-            display: flex;
-            margin-bottom: 5%;
+            justify-content: space-between;
+            margin-top: 5%;
+            // align items center hace que no se deforme la img
+            align-items: center;
             div{
-                background-color: $colorPrincipal;
-                width: 8px;
-                height: 100px;
-                margin-right: 1%;
-            }
-            p{
-                color: $colorParrafo2;
-            }
-        }
-    }
-
-    // Proyects
-
-    .proyects{
-        h3{
-            margin-bottom: 3%;
-        }
-        .card-cont{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            .card{
                 display: flex;
                 flex-direction: column;
-                box-shadow: 4px 0 10px rgba(#5222D0, 0.2);
-                img{
-                    width: 100%;
-                    // vertical align saca el margen abajo de la imagen
-                    vertical-align: middle;
+                justify-content: center;
+                align-items: flex-start;
+
+                h1{
+                    font-size: 54px;
+                    color: $colorPrincipal;
+                    margin-bottom: 15px;
+                    font-family: 'Fraunces', serif;
                 }
-                .card-txt{
-                    background-color: $colorCards;
-                    h4{
-                        margin: 10px 15px;
-                    }
-                    p{
-                        line-height: 1.3;    
-                        margin: 10px 15px; 
-                        color: $colorParrafo2;                   
-                    }
-                    .card-sk{
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        display: flex;
-                        p{
-                            margin-left: 10px;
-                            padding: 10px 15px;
-                            background-color: $colorPrincipal;
-                            border-radius: 6px;
-                            color: #ffffff;
-                        }
-                    }                   
+                .dev{
+                    letter-spacing: 2px;
+                    color: $colorParrafo;
+                }
+                a{
+                    padding: 15px 20px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: $colorPrincipal;
+                    border-radius: 6px;
+                    margin-top: 20px;
                 }
             }
-        } 
-        .github-link{
-            margin-top: 8%;
-            width: 100%;
+            img{
+                width: 40%;
+            
+            }
+        }
+        .arrow{
+            margin-top: 4.5%;
             display: flex;
             justify-content: center;
-            a{
-                padding: 15px 30px;
-                text-decoration: none;
-                color: #ffffff;
-                background-color: $colorPrincipal;
-                border-radius: 6px;
-            }
-        }       
-    }
-
-    // Skills
-
-    .skills{
-        margin-top: 5%;
-        margin-bottom: 5%;
-        h4{
-            margin-bottom: 5%;
         }
-        .logo-cont{
-            width: 100%;
+
+        // about me
+
+        .about{
             margin-bottom: 5%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            .logo{
+            h2{
+                margin-bottom: 3%;
+            }
+            .about-txt{
+                padding-left: 16px;
+                border-left: 3px solid $colorPrincipal;
+            }
+        }
+
+        // Proyects
+
+        .proyects{
+            h3{
+                margin-bottom: 3%;
+            }
+            .card-cont{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 4px 0 10px rgba(#0000, 0.2);
+                    border-radius: 6px;
+                    background-color: $colorCards;
+
+                    img{
+                        width: 100%;
+                        // vertical align saca el margen abajo de la imagen
+                        vertical-align: middle;
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                    }
+                    .card-txt{
+                        padding: 24px;
+                        >p{
+                            line-height: 1.3;     
+                            color: $colorParrafo2; 
+                            font-size: 12px;                  
+                        }
+                        .card-sk{
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            display: flex;
+                            p{
+                                margin-right: 8px;
+                                padding: 10px 15px;
+                                background-color: $colorPrincipal;
+                                border-radius: 6px;
+                                color: #ffffff;
+                            }
+                        }                   
+                    }
+                }
+            } 
+            .github-link{
+                margin-top: 8%;
+                width: 100%;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                img{
-                    margin-bottom: 6%;
-                    width: 40%;
+                justify-content: center;
+                a{
+                    padding: 15px 30px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: $colorPrincipal;
+                    border-radius: 6px;
                 }
-                p{
-                    color: $colorParrafo2;
+            }       
+        }
+
+        // Skills
+
+        .skills{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            h4{
+                margin-bottom: 5%;
+            }
+            .logo-cont{
+                width: 100%;
+                margin-bottom: 5%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                .logo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    img{
+                        margin-bottom: 6%;
+                        width: 40%;
+                    }
                 }
             }
-        }
+        }        
     }
+
 
     // Footer
 
@@ -215,9 +216,6 @@ body{
                     font-size: 35px;
                     color: $colorPrincipal;
                 }
-                p{
-                    color: $colorParrafo2;
-                }
             }
         }
         .footer-links{
@@ -226,12 +224,33 @@ body{
                 text-decoration: none;
                 color: black;
                 margin: 10px;
+                font-size: 20px;
             }
         }
-        p{
-            color: $colorParrafo2;
+        .whatsapp{
+            text-decoration: none;
+            color: $colorPrincipal;
         }
     }
 }
 
 // Media
+// grid-template-columns: repeat(auto-fit min-max(230px, 1fr));
+
+@media screen and (max-width: 900px) {
+    body{
+        main{
+            .proyects{
+                .card-cont{
+                    grid-template-columns: 1fr;
+                }
+            }
+            .skills{
+                .logo-cont{
+                    grid-template-columns: 1fr 1fr;
+                    row-gap: 50px;
+                }
+            }
+        }
+    }
+}
