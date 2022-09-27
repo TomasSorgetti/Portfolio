@@ -171,12 +171,24 @@ body {
 
 @media screen and (max-width: 800px) {
   body main .intro {
-    flex-direction: column; } }
+    flex-direction: column-reverse; } }
 
 @media screen and (max-width: 600px) {
-  body main .navbar p {
-    font-size: 10px; }
-  body main .navbar .nav-links .proyects-link {
-    display: none; }
-  body main .proyects .card-cont .card .card-txt .card-sk p {
-    font-size: 10px; } }
+  body .navbar {
+    padding: 16px; }
+    body .navbar p {
+      font-size: 20px;
+      flex: 0 0 33.3%; }
+    body .navbar .nav-links a {
+      font-size: 16px; }
+    body .navbar .nav-links .contact-but {
+      padding: 12px;
+      margin-left: 4px; }
+  body main {
+    width: 90%; }
+    body main .intro div {
+      margin-bottom: 5%; }
+    body main .intro img {
+      width: 90%; }
+    body main .proyects .card-cont .card .card-txt .card-sk p {
+      font-size: 10px; } }

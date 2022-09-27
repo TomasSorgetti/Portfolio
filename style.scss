@@ -263,22 +263,37 @@ body{
     body{
         main{
             .intro{
-                flex-direction: column;
+                flex-direction: column-reverse;
             }
         }
     }    
 }
 @media screen and (max-width: 600px) {
     body{
+        .navbar{
+            padding: 16px;
+            p{
+                font-size: 20px;
+                flex:0 0 33.3%;
+            }
+            .nav-links{
+                a{
+                    font-size: 16px;
+                } 
+                .contact-but{
+                    padding: 12px;
+                    margin-left: 4px;
+                }               
+            }
+        }        
         main{
-            .navbar{
-                p{
-                    font-size: 10px;
+            width: 90%;
+            .intro{
+                div{
+                    margin-bottom: 5%;
                 }
-                .nav-links{
-                    .proyects-link{
-                        display: none;
-                    }
+                img{
+                    width: 90%;
                 }
             }
             .proyects{
