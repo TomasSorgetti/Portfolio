@@ -8,7 +8,17 @@ body {
   body p {
     line-height: 1.7;
     color: #4b4b4b;
-    max-width: 70ch; }
+    max-width: 70ch;
+    font-size: 1rem; }
+  body a {
+    text-decoration: none; }
+  body h4 {
+    color: #0a0a0a; }
+  body .button {
+    box-shadow: inset 0 0 0 0 #3c26c9; }
+    body .button:hover {
+      box-shadow: inset 300px 0 0 0 #3c26c9;
+      transition: 600ms; }
   body .navbar {
     display: flex;
     justify-content: space-between;
@@ -28,6 +38,9 @@ body {
     body .navbar div a {
       text-decoration: none;
       color: #4b4b4b; }
+      body .navbar div a:nth-child(1):hover {
+        color: #000000;
+        font-weight: 700; }
   body main {
     width: 80%;
     margin: 0 auto;
@@ -49,7 +62,9 @@ body {
           font-family: 'Fraunces', serif; }
         body main .intro div .dev {
           letter-spacing: 2px;
-          color: #2c2c2c; }
+          color: #4b4b4b; }
+        body main .intro div p {
+          font-size: 1.125rem; }
         body main .intro div a {
           padding: 15px 20px;
           text-decoration: none;
@@ -79,27 +94,32 @@ body {
       body main .proyects .card-cont .card {
         display: flex;
         flex-direction: column;
-        box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 4px 0 10px rgba(61, 49, 140, 0.1);
         border-radius: 6px;
-        background-color: #f3f2fd; }
+        background-color: #f3f2fd;
+        cursor: pointer;
+        transition: 400ms ease-in-out; }
+        body main .proyects .card-cont .card:hover {
+          background-color: #fbfbfe;
+          box-shadow: 4px 2px 12px 10px rgba(61, 49, 140, 0.2); }
+        body main .proyects .card-cont .card:hover img {
+          filter: brightness(1); }
         body main .proyects .card-cont .card img {
           width: 100%;
           vertical-align: middle;
           border-top-left-radius: 6px;
-          border-top-right-radius: 6px; }
+          border-top-right-radius: 6px;
+          filter: brightness(0.6);
+          transition: filter 400ms; }
         body main .proyects .card-cont .card .card-txt {
           padding: 24px; }
-          body main .proyects .card-cont .card .card-txt > p {
-            line-height: 1.3;
-            color: #4b4b4b;
-            font-size: 12px; }
           body main .proyects .card-cont .card .card-txt .card-sk {
             margin-top: 10px;
             margin-bottom: 10px;
             display: flex; }
             body main .proyects .card-cont .card .card-txt .card-sk p {
               margin-right: 8px;
-              padding: 10px 15px;
+              padding: 4px 8px;
               background-color: #3d318c;
               border-radius: 6px;
               color: #ffffff; }
@@ -146,7 +166,13 @@ body {
       body .footer .icons-cont .icons {
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        text-decoration: none;
+        color: #3d318c; }
+        body .footer .icons-cont .icons:hover {
+          transform: translateY(-6px);
+          transition: 400ms;
+          color: #3c26c9; }
         body .footer .icons-cont .icons i {
           font-size: 35px;
           color: #3d318c;
@@ -155,9 +181,12 @@ body {
       margin-bottom: 2%; }
       body .footer .footer-links a {
         text-decoration: none;
-        color: black;
+        color: #4b4b4b;
         margin: 10px;
         font-size: 20px; }
+        body .footer .footer-links a:hover {
+          color: #000000;
+          font-weight: 700; }
     body .footer .whatsapp {
       text-decoration: none;
       color: #3d318c; }
@@ -171,7 +200,11 @@ body {
 
 @media screen and (max-width: 800px) {
   body main .intro {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+    body main .intro img {
+      margin-bottom: 10%; }
+    body main .intro div {
+      align-items: center; } }
 
 @media screen and (max-width: 600px) {
   body .navbar {

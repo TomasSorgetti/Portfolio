@@ -1,8 +1,9 @@
 
 $colorParrafo: rgb(44, 44, 44);
-$colorParrafo1: #0000;
+$colorParrafo1: rgba(10, 10, 10, 1);
 $colorParrafo2: rgb(75, 75, 75);
 $colorPrincipal: #3d318c;
+$colorbut: hsl(248, 68%, 47%);
 $colorCards: #f3f2fd;
 
 
@@ -17,8 +18,21 @@ body{
         line-height: 1.7;
         color: $colorParrafo2;
         max-width: 70ch;
+        font-size: 1rem;
     }
-    
+    a{
+        text-decoration: none;
+    }
+    h4{
+        color: $colorParrafo1;
+    }
+    .button{
+        box-shadow: inset 0 0 0 0 $colorbut;
+        &:hover{
+            box-shadow: inset 300px 0 0 0 $colorbut;
+            transition: 600ms;
+        }
+    }    
     // navbar
 
     .navbar{
@@ -43,6 +57,10 @@ body{
             a{
                 text-decoration: none;
                 color: $colorParrafo2;
+                &:nth-child(1):hover{
+                    color: #000000;
+                    font-weight: 700;
+                }
                 
             }
         }
@@ -75,7 +93,10 @@ body{
                 }
                 .dev{
                     letter-spacing: 2px;
-                    color: $colorParrafo;
+                    color: $colorParrafo2;
+                }
+                p{
+                    font-size: 1.125rem;
                 }
                 a{
                     padding: 15px 20px;
@@ -123,9 +144,18 @@ body{
                 .card{
                     display: flex;
                     flex-direction: column;
-                    box-shadow: 4px 0 10px rgba(#0000, 0.2);
+                    box-shadow: 4px 0 10px rgba($colorPrincipal, 0.1);
                     border-radius: 6px;
                     background-color: $colorCards;
+                    cursor: pointer;
+                    transition: 400ms ease-in-out;
+                    &:hover{
+                        background-color: lighten($colorCards, 2%);
+                        box-shadow: 4px 2px 12px 10px rgba($colorPrincipal, 0.2);
+                    }
+                    &:hover img{
+                        filter: brightness(1);
+                    }
 
                     img{
                         width: 100%;
@@ -133,21 +163,18 @@ body{
                         vertical-align: middle;
                         border-top-left-radius: 6px;
                         border-top-right-radius: 6px;
+                        filter: brightness(0.6);
+                        transition: filter 400ms;
                     }
                     .card-txt{
                         padding: 24px;
-                        >p{
-                            line-height: 1.3;     
-                            color: $colorParrafo2; 
-                            font-size: 12px;                  
-                        }
                         .card-sk{
                             margin-top: 10px;
                             margin-bottom: 10px;
                             display: flex;
                             p{
                                 margin-right: 8px;
-                                padding: 10px 15px;
+                                padding: 4px 8px;
                                 background-color: $colorPrincipal;
                                 border-radius: 6px;
                                 color: #ffffff;
@@ -216,6 +243,13 @@ body{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                text-decoration: none;
+                color: $colorPrincipal;
+                &:hover{
+                    transform: translateY(-6px);
+                    transition: 400ms;
+                    color: $colorbut;
+                }
                 i{
                     font-size: 35px;
                     color: $colorPrincipal;
@@ -227,9 +261,13 @@ body{
             margin-bottom: 2%;
             a{
                 text-decoration: none;
-                color: black;
+                color: $colorParrafo2;
                 margin: 10px;
                 font-size: 20px;
+                &:hover{
+                    color: #000000;
+                    font-weight: 700;
+                }
             }
         }
         .whatsapp{
@@ -264,6 +302,12 @@ body{
         main{
             .intro{
                 flex-direction: column-reverse;
+                img{
+                    margin-bottom: 10%;
+                }
+                div{
+                    align-items: center;
+                }
             }
         }
     }    
