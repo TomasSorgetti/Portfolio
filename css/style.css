@@ -190,7 +190,8 @@ body {
           font-weight: 700; }
     body .footer .whatsapp {
       text-decoration: none;
-      color: #3d318c; }
+      color: #3d318c;
+      padding: 6px; }
 
 @media screen and (max-width: 900px) {
   body main .proyects .card-cont {
