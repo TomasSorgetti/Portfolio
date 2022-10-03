@@ -28,7 +28,8 @@ body {
     padding: 32px; }
     body .navbar p {
       font-size: 28px;
-      color: #3d318c; }
+      color: #3d318c;
+      font-weight: 700; }
     body .navbar div .contact-but {
       padding: 17px 20px;
       background-color: #3d318c;
@@ -204,7 +205,8 @@ body {
     body main .intro img {
       margin-bottom: 10%; }
     body main .intro div {
-      align-items: center; } }
+      align-items: center;
+      text-align: center; } }
 
 @media screen and (max-width: 600px) {
   body .navbar {

@@ -45,6 +45,7 @@ body{
         p{
             font-size: 28px;
             color: $colorPrincipal;
+            font-weight: 700;
         }
         div{
             .contact-but{
@@ -307,6 +308,7 @@ body{
                 }
                 div{
                     align-items: center;
+                    text-align: center;
                 }
             }
         }
