@@ -1,28 +1,27 @@
 import React from 'react'
+import piProyect from "../../assets/img/piProyect.jpg"
+import styles from "./Proyects.module.scss"
+
 
 const Proyects = () => {
   return (
-      <div>
-          <h3>Proyects</h3>
-          <section>
-              <div>
-                  <a href="">
-                    <img src="" alt="" />
-                  </a>
-              </div>
-              <div>
-                  <a href="">
-                    <img src="" alt="" />
-                  </a>
-              </div>
-              <div>
-                  <a href="">
-                    <img src="" alt="" />
-                  </a>
-              </div>
-          </section>
+    <div className={styles.proyectsCont}>
+      <h3>Proyectos</h3>
+      <section>
+        <a href="" className={styles.proyect}>
+          <img src={piProyect} alt="proyect" />
+        </a>
+
+        <a href="" className={styles.proyectMiddle}>
+          <img src={piProyect} alt="proyect" />
+        </a>
+
+        <a href="" className={styles.proyect}>
+          <img src={piProyect} alt="proyect" />
+        </a>
+      </section>
     </div>
-  )
+  );
 }
 
 export default Proyects

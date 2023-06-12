@@ -1,9 +1,8 @@
 //imports
 import React from 'react'
-import { Link } from 'react-router-dom';
 
 //imports components
-import Footer from '../Footer/Footer';
+import Proyects from '../Proyects/Proyects';
 
 //imports styles
 import styles from "./Portfolio.module.scss"
@@ -22,7 +21,13 @@ const Portfolio = () => {
     <div className={styles.portfolio}>
       <img className={styles.vector} src={background_vector} alt="" />
       <section className={styles.headerCont}>
-        <h1>Desarrollador Full Stack</h1>
+        <div className={styles.title}>
+          <h1>Tomás Sorgetti</h1>
+          <div className={styles.underTitle}>
+            <h2>Desarrollador</h2>
+            <h2 className={styles.coloredTitle}>Full Stack</h2>
+          </div>
+        </div>
         <div className={styles.header}>
           <ul className={styles.headerItemsLeft}>
             <li>HTML</li>
@@ -47,15 +52,15 @@ const Portfolio = () => {
       <section className={styles.about} id="about">
         <h3>Sobre Mí</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-          inventore, optio nihil, necessitatibus quod totam ab nobis temporibus
-          voluptate libero quisquam odit. Repudiandae, modi libero ipsa porro
-          exercitationem excepturi praesentium. Aperiam quibusdam maxime porro
-          earum? Necessitatibus voluptate qui iure autem, similique eaque nisi
-          ab officia, quam reprehenderit quod debitis nemo ullam fugit magnam
-          sapiente, iusto reiciendis? Alias ducimus aliquam quaerat.
+          Soy un desarrollador web full stack con un enfoque especial en el
+          front-end. Mi curiosidad y deseo de perfeccionamiento me condujo a
+          convertirme en un luthier y, posteriormente, a involucrarme en el
+          desarrollo de sitios web. Mi objetivo es crear experiencias en línea
+          excepcionales para los usuarios, centrándome en la usabilidad, el
+          diseño atractivo y la optimización del rendimiento.
         </p>
       </section>
+      <Proyects />
       <section className={styles.contact} id="contact">
         <div className={styles.contactLinks}>
           <div className={styles.linkCont}>
@@ -79,7 +84,6 @@ const Portfolio = () => {
           <h3>Contacto</h3>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

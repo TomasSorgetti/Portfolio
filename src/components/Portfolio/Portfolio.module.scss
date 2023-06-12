@@ -20,14 +20,36 @@ $textColor: #D1D1D1;
         align-items: center;
         gap: 30px;
         margin-top: 20px;
-        h1{
-            margin:0;
-            font-family: 'Italiana';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 80px;
-            line-height: 94px;
-            text-align: center;
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                margin:0;
+                font-family: 'Days One';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 70px;
+                line-height: 94px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .underTitle{
+                font-family: 'Bai Jamjuree';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 30px;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                text-transform: uppercase;
+                .coloredTitle{
+                    color: #A300F8;
+                }
+            }
         }
         button{
             background: linear-gradient(to right, #E80ECD, #FE0072);
@@ -39,7 +61,11 @@ $textColor: #D1D1D1;
             height: 47px;
             box-shadow: 0px 0px 10px rgba(255, 188, 218, 0.15), 0px 0px 15px #FE0072;
             border-radius: 4px;
-            border: none;
+            border: 1px solid #FE0072;
+            cursor: pointer;
+            &:hover{
+                background: linear-gradient(to left, #E80ECD, #FE0072);
+            }
         }
         .header{
             position: relative;
@@ -98,13 +124,13 @@ $textColor: #D1D1D1;
         position: relative;
         h3{
             position: absolute;
-            top: 30px;
+            top: 60px;
             left: -130px;
             transform: rotate(-90deg);
-            font-family: 'Italiana';
+            font-family: 'Days One';
             font-style: normal;
             font-weight: 400;
-            font-size: 48px;
+            font-size: 30px;
             text-transform: uppercase;
         }
         p{
@@ -112,7 +138,7 @@ $textColor: #D1D1D1;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
-            line-height: 170%;
+            line-height: 270%;
             color: $textColor;
         }
     }
@@ -155,14 +181,14 @@ $textColor: #D1D1D1;
             }
             h3{
                 text-transform: uppercase;
-                font-family: 'Italiana';
+                font-family: 'Days One';
                 font-style: normal;
                 transform: rotate(-90deg);
                 position: absolute;
-                bottom: 50px;
-                right: -240px;
+                bottom: 75px;
+                right: -250px;
                 font-weight: 400;
-                font-size: 70px;
+                font-size: 55px;
                 line-height: 94px;
             }
         }
