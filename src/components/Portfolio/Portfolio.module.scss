@@ -1,0 +1,172 @@
+// variables
+$fontColor: #ffffff;
+$textColor: #D1D1D1;
+
+
+//background images
+.vector{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+.portfolio{
+    
+    .headerCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+        h1{
+            margin:0;
+            font-family: 'Italiana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 94px;
+            text-align: center;
+        }
+        button{
+            background: linear-gradient(to right, #E80ECD, #FE0072);
+            color: $fontColor;
+            font-size: 16px;
+            line-height: 27.2px;
+            font-weight: 700;
+            width: 197px;
+            height: 47px;
+            box-shadow: 0px 0px 10px rgba(255, 188, 218, 0.15), 0px 0px 15px #FE0072;
+            border-radius: 4px;
+            border: none;
+        }
+        .header{
+            position: relative;
+            
+        }
+        .headerItemsLeft{
+            position: absolute;
+            top: 20px;
+            left: -80px;
+            list-style: none;
+            z-index: 1;
+            li{
+                font-family: 'Bai Jamjuree';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 40px;
+                text-shadow: 0px 4px 20px #8439F9;
+            }
+        }
+        .headerItemsRight{
+            position: absolute;
+            top: 150px;
+            right: -80px;
+            list-style: none;
+            z-index: 1;
+            li{
+                font-family: 'Bai Jamjuree';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 40px;
+                text-shadow: 0px 4px 20px rgb(132, 57, 249);
+            }
+        }
+        .headerImageCont{
+            width: 600px;
+            height: 400px;
+            border: 1.5px solid grey;
+            border-radius: 26px;
+            position: relative;
+            overflow: hidden;
+            img{
+                position: absolute;
+                object-fit: cover;
+            }
+        }
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin: 160px auto;
+        gap: 10px;
+        position: relative;
+        h3{
+            position: absolute;
+            top: 30px;
+            left: -130px;
+            transform: rotate(-90deg);
+            font-family: 'Italiana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            text-transform: uppercase;
+        }
+        p{
+            font-family: 'Bai Jamjuree';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 170%;
+            color: $textColor;
+        }
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contactLinks{
+            position: relative;
+            width: 630px;
+            height: 354px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.33);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(7px);
+            display: grid;
+            place-items: center;
+            .linkCont{
+                width: 35%;
+                margin: auto auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 30px;
+                .links{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    .link{
+                        font-family: 'Bai Jamjuree';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: $fontColor;
+                        text-decoration: none;
+                    }
+                }
+            }
+            h3{
+                text-transform: uppercase;
+                font-family: 'Italiana';
+                font-style: normal;
+                transform: rotate(-90deg);
+                position: absolute;
+                bottom: 50px;
+                right: -240px;
+                font-weight: 400;
+                font-size: 70px;
+                line-height: 94px;
+            }
+        }
+    }
+
+}
+
