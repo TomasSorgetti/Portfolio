@@ -15,8 +15,8 @@ function App() {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref });
 
-  const scale = useTransform(scrollYProgress,[0.1,0.4,0.95],[1,1.5,1.5])
-
+  const scale = useTransform(scrollYProgress, [0.1, 0.4, 0.95], [1, 1.5, 1.5])
+  
   return (
     <div ref={ref} className="App" id="app" style={{overflow:"hidden"}}>
       <Navbar />

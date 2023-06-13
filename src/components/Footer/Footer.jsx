@@ -13,10 +13,10 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/tomas-sorgetti/" target="_blank">
           <AiOutlineLinkedin size="24px" color="white" />
         </a>
-        <a href="#" target="_blank">
+        <a href="mailto:tomassorgetti456@gmail.com" target="_blank">
           <AiOutlineMail size="24px" color="white" />
         </a>
-        <a href="#" target="_blank">
+        <a href="https://wa.me/541136323780" target="_blank">
           <BsWhatsapp size="24px" color="white" />
         </a>
         <a href="https://github.com/TomasSorgetti" target="_blank">
@@ -25,7 +25,7 @@ const Footer = () => {
       </div>
       <div className={styles.footerLinks}>
         <a href="#about">Sobre Mí</a>
-        <a href="#app">Portfolio</a>
+        <a href="#proyects">Proyectos</a>
         <a href="#contact">Contacto</a>
       </div>
       <p>Copyright 2023</p>

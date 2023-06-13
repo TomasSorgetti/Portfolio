@@ -131,17 +131,23 @@ $textColor: #D1D1D1;
                 left: 35%;
                 z-index: 2;
                 background: linear-gradient(to right, #E80ECD, #FE0072);
-                color: $fontColor;
-                font-size: 16px;
-                line-height: 27.2px;
-                font-weight: 700;
                 width: 197px;
                 height: 47px;
                 box-shadow: 0px 0px 10px rgba(255, 188, 218, 0.15), 0px 0px 15px #FE0072;
                 border-radius: 4px;
                 border: 1px solid #FE0072;
                 cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: $fontColor;
+                    font-size: 16px;
+                    line-height: 27.2px;
+                    font-weight: 700;
+                }
                 &:hover{
+                    a{
+                        font-size: 18px;
+                    }
                     background: linear-gradient(to left, #E80ECD, #FE0072);
                 }
             }
@@ -187,8 +193,9 @@ $textColor: #D1D1D1;
             background: rgba(255, 255, 255, 0.33);
             border: 1px solid rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(7px);
-            display: grid;
-            place-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .linkCont{
                 width: 35%;
                 margin: auto auto;
@@ -228,4 +235,209 @@ $textColor: #D1D1D1;
     }
 
 }
+@media screen and (max-width:1200px){
+    .portfolio {
+            .headerCont {
+                .header{
+                    .headerItemsLeft{
+                        ul{
+                            li{
+                                p{
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                    }
+                    .headerItemsRight{
+                        right: -250px;
+                        ul {
+                            
+                                li {
+                                    p {
+                                        font-size: 26px;
+                                    }
+                                }
+                            }
+                    }
+                    .headerImageCont{
+                        width: 500px;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+}
+@media screen and (max-width:980px){
+    .portfolio{
+        .headerCont{
+            .header {
+                    .headerItemsLeft {
+                        ul {
+                            li {
+                                p {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+            
+                    .headerItemsRight {
+                        right: -150px;
+            
+                        ul {
+            
+                            li {
+                                p {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+            
+                    .headerImageCont {
+                        width: 450px;
+                        height: 350px;
+                    }
+                }
+            .title{
+                h1{
+                    font-size: 50px;
+                }
+                .underTitle{
+                    font-size: 16px;
+                }
+            }
+        }
+        .contact{
+            margin-top: 250px;
+            .contactLinks{
+                h3{
+                    top: -180px;
+                    right: 140px;
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:760px) {
+    .portfolio {  
+        .headerCont {
+                .header {
+                    .headerItemsLeft {
+                        ul{
+                            display: none !important;
+                        }
+                    }
+            
+                    .headerItemsRight {
+                        ul{
+                            display: none !important;
+                        }
+                    }
+                    .headerImageCont{
+                        button {
+                                left: 30%;
+                            }
+                    }
+            
+                }
+                .title {
+                    h1 {
+                        font-size: 46px;
+                    }
+        
+                    .underTitle {
+                        font-size: 14px;
+                    }
+                }
+            }
+        .about{
+            h3{
+                top: -80px;
+                left: 30%;
+                transform: rotate(0deg);
+            }
+            p{
+                text-align: center;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        .contact {
+            .contactLinks {
+                width: 80%;
+                margin: 0 auto;  
+                .linkCont{
+                    width: 80%;
+                    margin-left: 30%;
+                    .links{
+                        .link{
+                            font-size: 16px;
 
+                        }
+                    }
+                }              
+                h3 {
+                    font-size: 42px;
+                    right: 23%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .portfolio {
+        .headerCont {
+            .header{
+                width: 95%;
+                margin: 0 auto;
+                .headerImageCont {                        
+                        width: 100%;
+                        height: 350px;
+                        button{
+                            left: 22%;
+                        }
+                }
+
+            }
+                .title {
+                    h1 {
+                        font-size: 28px;
+                    }
+        
+                    .underTitle {
+                        font-size: 10px;
+                    }
+                }
+            }
+        .about{
+            h3{
+                top: -110px;
+                left: 15%;
+                font-size: 24px;
+            }
+            p{
+                text-align: center;
+                width: 95%;
+                margin: 0 auto;
+            }
+        }
+        .contact {
+            .contactLinks {
+                width: 60%;
+                margin: 0 auto;
+
+                .linkCont {
+                    width: 80%;
+                    margin-left: 16%;
+                }
+
+                h3 {
+                    font-size: 42px;
+                    right: 18%;
+                }
+            }
+        }
+    }
+}

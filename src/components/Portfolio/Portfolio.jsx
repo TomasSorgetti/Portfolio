@@ -123,7 +123,10 @@ const Portfolio = () => {
             <div className={styles.imageCont}>
               <img src={frontImage} alt="" />
             </div>
-            <button>CONTACTAME</button>
+            <button>
+              {" "}
+              <a href=""> CONTACTAME</a>
+            </button>
           </motion.div>
           <div className={styles.headerItemsRight}>
             <ul>
