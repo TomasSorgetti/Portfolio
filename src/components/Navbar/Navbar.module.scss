@@ -9,6 +9,28 @@
     font-family: 'Bai Jamjuree';
     font-style: normal;
 }
+.lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    button{
+        background:none;
+        border: none;
+        color:  #ffffff;
+        cursor: pointer;
+    }
+    .active{
+        font-weight: 600;
+        color: #c989eb;
+        text-shadow: 0px 4px 20px #c989eb;
+    }
+    .langSep{
+        width: 2px;
+        height: 20px;
+        background-color: rgb(171, 171, 171);
+    }
+}
 .logo{
     text-decoration: none;
     color: #ffffff;

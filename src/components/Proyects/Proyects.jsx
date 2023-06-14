@@ -16,7 +16,7 @@ import { FaSass } from "react-icons/fa";
 
 
 
-const Proyects = () => {
+const Proyects = ({t}) => {
   return (
     <motion.div id='proyects'
       className={styles.proyectsCont}
@@ -28,7 +28,7 @@ const Proyects = () => {
       whileInView="visible"
       transition={{ duration: 0.6, delay: 0.25 }}
     >
-      <h3>Proyectos</h3>
+      <h3>{t("Proyectos")}</h3>
       <section>
         <a
           href="https://tomassorgetti.github.io/La-Casa-Del-Luthier/index.html"

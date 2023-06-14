@@ -5,7 +5,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 import styles from "./Footer.module.scss"
 
-const Footer = () => {
+const Footer = ({t}) => {
   return (
     <div className={styles.footerCont}>
       <h4>Tomás Sorgetti</h4>
@@ -24,9 +24,9 @@ const Footer = () => {
         </a>
       </div>
       <div className={styles.footerLinks}>
-        <a href="#about">Sobre Mí</a>
-        <a href="#proyects">Proyectos</a>
-        <a href="#contact">Contacto</a>
+        <a href="#about">{t("Sobre_Mí")}</a>
+        <a href="#proyects">{t("Proyectos")}</a>
+        <a href="#contact">{t("Contacto")}</a>
       </div>
       <p>Copyright 2023</p>
     </div>

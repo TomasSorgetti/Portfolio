@@ -28,7 +28,7 @@ function useParallax(value, distance) {
   return useTransform(value, [1, 0], [-distance, 0]);
 }
 
-const Portfolio = () => {
+const Portfolio = ({t}) => {
   const ref = useRef(null)
   const isInView = useInView(ref,{once:true})
   const mainControlls = useAnimation()
@@ -62,8 +62,7 @@ const Portfolio = () => {
         >
           <h1>Tomás Sorgetti</h1>
           <div className={styles.underTitle}>
-            <h2>Desarrollador</h2>
-            <h2 className={styles.coloredTitle}>Full Stack</h2>
+            <h2 className={styles.coloredTitle}>{t("Desarrollador")}</h2>
           </div>
         </motion.div>
         <div className={styles.header}>
@@ -125,7 +124,7 @@ const Portfolio = () => {
             </div>
             <button>
               {" "}
-              <a href=""> CONTACTAME</a>
+              <a href=""> {t("Contactame") }</a>
             </button>
           </motion.div>
           <div className={styles.headerItemsRight}>
@@ -186,24 +185,32 @@ const Portfolio = () => {
         className={styles.about}
         id="about"
         variants={{
-          hidden: { opacity: 0, x: 60 },
+          hidden: { opacity: 0, x: -60 },
           visible: { opacity: 1, x: 0 },
         }}
         initial="hidden"
         whileInView="visible"
-        transition={{ duration: 0.6, delay: 0.35 }}
+        transition={{ duration: 0.6, delay: 0.45 }}
       >
-        <h3>Sobre Mí</h3>
+        <h3>{t("Sobre Mí")}</h3>
         <p>
-          Soy un desarrollador web full stack con un enfoque especial en el
-          front-end. Mi curiosidad y deseo de perfeccionamiento me condujo a
-          convertirme en un luthier y, posteriormente, a involucrarme en el
-          desarrollo de sitios web. Mi objetivo es crear experiencias en línea
-          excepcionales para los usuarios, centrándome en la usabilidad, el
-          diseño atractivo y la optimización del rendimiento.
+          {t("TXT1")}
+          {t(
+            "TXT2"
+          )}
+          {t(
+            "TXT3"
+          )}
+          {t(
+            "TXT4"
+          )}
+          {t(
+            "TXT5"
+          )}
+          {t("TXT6")}
         </p>
       </motion.section>
-      <Proyects />
+      <Proyects t={t} />
       <motion.section
         className={styles.contact}
         id="contact"
@@ -234,7 +241,7 @@ const Portfolio = () => {
               <a className={styles.link}>TomasSorgetti</a>
             </div>
           </div>
-          <h3>Contacto</h3>
+          <h3>{t("Contacto")}</h3>
         </div>
       </motion.section>
     </div>
