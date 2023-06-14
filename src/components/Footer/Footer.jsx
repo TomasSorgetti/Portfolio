@@ -11,16 +11,16 @@ const Footer = () => {
       <h4>Tomás Sorgetti</h4>
       <div className={styles.footerIcons}>
         <a href="https://www.linkedin.com/in/tomas-sorgetti/" target="_blank">
-          <AiOutlineLinkedin size="24px" color="white" />
+          <AiOutlineLinkedin className={styles.icons} size="24px" color="white" />
         </a>
         <a href="mailto:tomassorgetti456@gmail.com" target="_blank">
-          <AiOutlineMail size="24px" color="white" />
+          <AiOutlineMail className={styles.icons} size="24px" color="white" />
         </a>
         <a href="https://wa.me/541136323780" target="_blank">
-          <BsWhatsapp size="24px" color="white" />
+          <BsWhatsapp className={styles.icons} size="24px" color="white" />
         </a>
         <a href="https://github.com/TomasSorgetti" target="_blank">
-          <AiOutlineGithub size="24px" color="white" />
+          <AiOutlineGithub className={styles.icons} size="24px" color="white" />
         </a>
       </div>
       <div className={styles.footerLinks}>
