@@ -21,7 +21,7 @@ const NavBar = ({ t, i18n }) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className={styles.navCollapse}>
           <Nav className={styles.navLinks}>
-            <Nav.Link className={styles.link} href="#about">
+            <Nav.Link className={styles.link} href="#buttonContact">
               {t("Sobre_Mí")}
             </Nav.Link>
             <Nav.Link className={styles.link} href="#proyects">
