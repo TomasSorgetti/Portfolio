@@ -150,7 +150,7 @@ $textColor: #D1D1D1;
         position: relative;
         h3{
             position: absolute;
-            top: 60px;
+            top: 90px;
             left: -130px;
             transform: rotate(-90deg);
             font-family: 'Days One';
@@ -163,7 +163,7 @@ $textColor: #D1D1D1;
             font-family: 'Bai Jamjuree';
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 20px;
             line-height: 270%;
             color: $textColor;
         }
@@ -253,6 +253,17 @@ $textColor: #D1D1D1;
                     }
                 }
             }
+            .about{
+            h3{
+                font-size: 28px;
+                top: 76px;
+
+            }
+            p{
+                line-height: 200%;
+                font-size: 18px;
+            }
+        }
         }
 }
 @media screen and (max-width:980px){
@@ -306,6 +317,11 @@ $textColor: #D1D1D1;
                     right: 140px;
                     transform: rotate(0deg);
                 }
+            }
+        }
+        .about{
+            h3{
+                top: 96px;
             }
         }
     }
@@ -411,6 +427,7 @@ $textColor: #D1D1D1;
             }
             p{
                 text-align: center;
+                line-height: 170%;
             }
         }
         .contact {
