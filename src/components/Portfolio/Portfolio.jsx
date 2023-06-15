@@ -125,7 +125,7 @@ const Portfolio = ({t}) => {
           </div>
           <div className={styles.headerImageCont} style={{ y }}>
             <img className={styles.imageCont} src={frontImage} alt="" />
-            <button id='buttonContact'>
+            <button id="buttonContact">
               {" "}
               <a href="#contact"> {t("Contactame")}</a>
             </button>
@@ -197,12 +197,10 @@ const Portfolio = ({t}) => {
       >
         <h3>{t("Sobre_Mí")}</h3>
         <div>
-
           <p>
             {t("TXT1")}
             {t("TXT2")}
             {t("TXT3")}
-
           </p>
           <p>
             {t("TXT4")}
@@ -225,22 +223,38 @@ const Portfolio = ({t}) => {
       >
         <div className={styles.contactLinks}>
           <div className={styles.linkCont}>
-            <div className={styles.links}>
+            <a
+              href="https://www.linkedin.com/in/tomas-sorgetti/"
+              target="_blank"
+              className={styles.links}
+            >
               <AiOutlineLinkedin size="24px" />
               <a className={styles.link}>Tomás Sorgetti</a>
-            </div>
-            <div className={styles.links}>
+            </a>
+            <a
+              href="mailto:tomassorgetti456@gmail.com"
+              target="_blank"
+              className={styles.links}
+            >
               <AiOutlineMail size="24px" />
               <a className={styles.link}>tomassorgetti456@gmail.com</a>
-            </div>
-            <div className={styles.links}>
+            </a>
+            <a
+              href="https://wa.me/541136323780"
+              target="_blank"
+              className={styles.links}
+            >
               <BsWhatsapp size="24px" />
               <a className={styles.link}>+54 11 3632-3780</a>
-            </div>
-            <div className={styles.links}>
+            </a>
+            <a
+              href="https://github.com/TomasSorgetti"
+              target="_blank"
+              className={styles.links}
+            >
               <AiOutlineGithub size="24px" />
               <a className={styles.link}>TomasSorgetti</a>
-            </div>
+            </a>
           </div>
           <h3>{t("Contacto")}</h3>
         </div>

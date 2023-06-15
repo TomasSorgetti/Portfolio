@@ -201,6 +201,8 @@ $textColor: #D1D1D1;
                     display: flex;
                     gap: 10px;
                     align-items: center;
+                    text-decoration: none;
+                    color: $fontColor;
                     .link{
                         font-family: 'Bai Jamjuree';
                         font-style: normal;
