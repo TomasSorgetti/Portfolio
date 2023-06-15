@@ -33,7 +33,7 @@ const Proyects = ({t}) => {
       <h3>{t("Proyectos")}</h3>
       <section>
         <a
-          href="https://tomassorgetti.github.io/La-Casa-Del-Luthier/index.html"
+          href="https://github.com/TomasSorgetti"
           className={styles.proyect}
           target="_blank"
         >
@@ -57,7 +57,7 @@ const Proyects = ({t}) => {
         </a>
 
         <a
-          href="https://github.com/TomasSorgetti"
+          href="https://tomassorgetti.github.io/La-Casa-Del-Luthier/index.html"
           className={styles.proyectMiddle}
           target="_blank"
         >
