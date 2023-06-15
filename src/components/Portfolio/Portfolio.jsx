@@ -196,15 +196,20 @@ const Portfolio = ({t}) => {
         transition={{ duration: 0.6, delay: 0.45 }}
       >
         <h3>{t("Sobre_Mí")}</h3>
-        <p>
-          {t("TXT1")}
-          {t("TXT2")}
-          {t("TXT3")}
-          <br />
-          {t("TXT4")}
-          {t("TXT5")}
-          {t("TXT6")}
-        </p>
+        <div>
+
+          <p>
+            {t("TXT1")}
+            {t("TXT2")}
+            {t("TXT3")}
+
+          </p>
+          <p>
+            {t("TXT4")}
+            {t("TXT5")}
+            {t("TXT6")}
+          </p>
+        </div>
       </motion.section>
       <Proyects t={t} />
       <motion.section

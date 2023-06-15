@@ -150,7 +150,7 @@ $textColor: #D1D1D1;
         position: relative;
         h3{
             position: absolute;
-            top: 120px;
+            top: 100px;
             left: -130px;
             transform: rotate(-90deg);
             font-family: 'Days One';
@@ -159,13 +159,18 @@ $textColor: #D1D1D1;
             font-size: 30px;
             text-transform: uppercase;
         }
-        p{
-            font-family: 'Bai Jamjuree';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 270%;
-            color: $textColor;
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            p{
+                font-family: 'Bai Jamjuree';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 38px;
+                color: $textColor;
+            }
         }
     }
     .contact{
@@ -256,7 +261,7 @@ $textColor: #D1D1D1;
             .about{
             h3{
                 font-size: 28px;
-                top: 76px;
+                top: 120px;
 
             }
             p{
@@ -319,11 +324,6 @@ $textColor: #D1D1D1;
                 }
             }
         }
-        .about{
-            h3{
-                top: 96px;
-            }
-        }
     }
 }
 @media screen and (max-width:760px) {
@@ -359,9 +359,11 @@ $textColor: #D1D1D1;
                 }
             }
         .about{
+            margin-top: 180px;
+            width: 90%;
             h3{
                 top: -80px;
-                left: 30%;
+                left: 35%;
                 transform: rotate(0deg);
             }
             p{
@@ -418,8 +420,7 @@ $textColor: #D1D1D1;
                 }
             }
         .about{
-            margin-top: 180px;
-            width: 90%;
+
             h3{
                 top: -80px;
                 left: 32%;
