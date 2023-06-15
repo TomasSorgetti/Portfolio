@@ -14,8 +14,8 @@ const NavBar = ({ t, i18n }) => {
 
   const handleClick = (e, prop) => {
     e.preventDefault();
-    i18n.changeLanguage(prop);
     localStorage.setItem("lang",prop)
+    i18n.changeLanguage(prop);
   };
 
   
