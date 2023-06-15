@@ -13,7 +13,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 
 //import images
-import frontImage from "../../assets/img/katy.jpg"
+import frontImage from "../../assets/img/tom5 1.png"
 
 
 import {
@@ -34,7 +34,7 @@ const Portfolio = ({t}) => {
   const mainControlls = useAnimation()
 
   const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 600);
+  const y = useParallax(scrollYProgress, -600);
   const y2 = useParallax(scrollYProgress, 100);
   
   const x = useTransform(scrollYProgress, [0, 1], [0, -700]);
@@ -52,7 +52,7 @@ const Portfolio = ({t}) => {
         <motion.div
           className={styles.title}
           variants={{
-            hidden: { opacity: 0, y: 60 },
+            hidden: { opacity: 0, y: 90 },
             visible: { opacity: 1, y: 0 },
           }}
           initial="hidden"
@@ -70,7 +70,7 @@ const Portfolio = ({t}) => {
             <ul>
               <motion.li
                 variants={{
-                  hidden: { opacity: 0, x: -60 },
+                  hidden: { opacity: 0, x: -90 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 initial="hidden"
@@ -82,7 +82,7 @@ const Portfolio = ({t}) => {
               </motion.li>
               <motion.li
                 variants={{
-                  hidden: { opacity: 0, x: -60 },
+                  hidden: { opacity: 0, x: -90 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 initial="hidden"
@@ -94,7 +94,7 @@ const Portfolio = ({t}) => {
               </motion.li>
               <motion.li
                 variants={{
-                  hidden: { opacity: 0, x: -60 },
+                  hidden: { opacity: 0, x: -90 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 initial="hidden"
@@ -102,11 +102,11 @@ const Portfolio = ({t}) => {
                 transition={{ duration: 0.5, delay: 0.45 }}
                 style={{ x, transition: { delay: 0.2 } }}
               >
-                <p>JAVASCRIPT</p>
+                <p>REACT</p>
               </motion.li>
               <motion.li
                 variants={{
-                  hidden: { opacity: 0, x: -60 },
+                  hidden: { opacity: 0, x: -90 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 initial="hidden"
@@ -114,24 +114,22 @@ const Portfolio = ({t}) => {
                 transition={{ duration: 0.5, delay: 0.55 }}
                 style={{ x }}
               >
-                <p>REACT</p>
+                <p>JAVASCRIPT</p>
               </motion.li>
             </ul>
           </div>
-          <motion.div className={styles.headerImageCont} style={{ y }}>
-            <div className={styles.imageCont}>
-              <img src={frontImage} alt="" />
-            </div>
+          <div className={styles.headerImageCont} style={{y}} >
+            <img className={styles.imageCont} src={frontImage} alt="" />
             <button>
               {" "}
-              <a href=""> {t("Contactame") }</a>
+              <a href=""> {t("Contactame")}</a>
             </button>
-          </motion.div>
+          </div>
           <div className={styles.headerItemsRight}>
             <ul>
               <motion.li
                 variants={{
-                  hidden: { opacity: 0, x: 60 },
+                  hidden: { opacity: 0, x: 90 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 initial="hidden"
@@ -143,7 +141,7 @@ const Portfolio = ({t}) => {
               </motion.li>
               <motion.li
                 variants={{
-                  hidden: { opacity: 0, x: 60 },
+                  hidden: { opacity: 0, x: 90 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 initial="hidden"
@@ -155,7 +153,7 @@ const Portfolio = ({t}) => {
               </motion.li>
               <motion.li
                 variants={{
-                  hidden: { opacity: 0, x: 60 },
+                  hidden: { opacity: 0, x: 90 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 initial="hidden"
@@ -167,7 +165,7 @@ const Portfolio = ({t}) => {
               </motion.li>
               <motion.li
                 variants={{
-                  hidden: { opacity: 0, x: 60 },
+                  hidden: { opacity: 0, x: 90 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 initial="hidden"
@@ -185,28 +183,20 @@ const Portfolio = ({t}) => {
         className={styles.about}
         id="about"
         variants={{
-          hidden: { opacity: 0, x: -60 },
+          hidden: { opacity: 0, x: -70 },
           visible: { opacity: 1, x: 0 },
         }}
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.6, delay: 0.45 }}
       >
-        <h3>{t("Sobre Mí")}</h3>
+        <h3>{t("Sobre_Mí")}</h3>
         <p>
           {t("TXT1")}
-          {t(
-            "TXT2"
-          )}
-          {t(
-            "TXT3"
-          )}
-          {t(
-            "TXT4"
-          )}
-          {t(
-            "TXT5"
-          )}
+          {t("TXT2")}
+          {t("TXT3")}
+          {t("TXT4")}
+          {t("TXT5")}
           {t("TXT6")}
         </p>
       </motion.section>

@@ -21,10 +21,10 @@
         align-items: center;
         justify-content: center;
         .proyectMiddle{
+            background: radial-gradient(60.38% 60.38% at 39.23% 43.37%, #302856 0%, #080516 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #151629;
             width: 353px;
             height: 530px;
             border-radius: 20px;
-            border: 1px solid rgb(161, 160, 160);
             position: relative;
             overflow: hidden;
             .imageCont{
@@ -34,8 +34,8 @@
                 border-radius: 20px;
                 img{
                     height: 100%;
+                    width: 100%;
                     object-fit: contain; 
-                    object-position: -450px 0px;
                 }
             }
             &:hover .textCont{
@@ -71,22 +71,50 @@
                 }
             }
         }
+        
         .proyect{
+            background: radial-gradient(60.38% 60.38% at 39.23% 43.37%, #302856 0%, #080516 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #151629;
             width: 353px;
             height: 450px;
             border-radius: 20px;
-            border: 1px solid rgb(161, 160, 160);
             position: relative;
             overflow: hidden;
+            .imageContVideogames{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .videogamesCont{
+                    width: 80%;
+                    height: 70%;
+                    margin: auto auto;
+                    background-color: red;
+                    position: relative;
+                    overflow: hidden;
+                    .image1{
+                        position: absolute;
+                        height: 55%;
+                        z-index: 1;
+                    }
+                    .image2{
+                        height: 50%;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+            }
             .imageCont{
                 width: 100%;
-                height: 100%;
+                height: 100%;                
                 overflow: hidden;
                 border-radius: 20px;
                 img{
                     height: 100%;
+                    width: 100%;
+                    object-position: -30px 50px;
                     object-fit: contain; 
-                    object-position: -300px 0px;
                 }
             }
             &:hover .textCont{

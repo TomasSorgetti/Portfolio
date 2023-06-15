@@ -1,7 +1,8 @@
 import React from 'react'
-import piProyect from "../../assets/img/piProyect.jpg"
-import luthier from "../../assets/img/luthier.jpg"
-import pasteleria from "../../assets/img/pastelería.jpg"
+import piProyect1 from "../../assets/img/piProyect1.png"
+import piProyect2 from "../../assets/img/piProyect2.png"
+import luthier from "../../assets/img/luthier.png"
+import pasteleria from "../../assets/img/pastelería.png"
 import styles from "./Proyects.module.scss"
 import { motion } from "framer-motion";
 
@@ -18,7 +19,8 @@ import { FaSass } from "react-icons/fa";
 
 const Proyects = ({t}) => {
   return (
-    <motion.div id='proyects'
+    <motion.div
+      id="proyects"
       className={styles.proyectsCont}
       variants={{
         hidden: { opacity: 0, y: 60 },
@@ -35,26 +37,11 @@ const Proyects = ({t}) => {
           className={styles.proyect}
           target="_blank"
         >
-          <div className={styles.imageCont}>
-            <img src={luthier} alt="proyect" />
-          </div>
-          <div className={styles.textCont}>
-            <h4>La Casa del Luthier</h4>
-            <div className={styles.tecnology}>
-              <AiFillHtml5 color="#FE0072" size="1.8rem" />
-              <DiCss3 color="#FE0072" size="1.8rem" />
-              <FaSass color="#FE0072" size="1.8rem" />
+          <div className={styles.imageContVideogames}>
+            <div className={styles.videogamesCont}>
+              <img className={styles.image1} src={piProyect1} alt="proyect" />
+              <img className={styles.image2} src={piProyect2} alt="proyect" />
             </div>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/TomasSorgetti"
-          className={styles.proyectMiddle}
-          target="_blank"
-        >
-          <div className={styles.imageCont}>
-            <img src={piProyect} alt="proyect" />
           </div>
           <div className={styles.textCont}>
             <h4>Videogames</h4>
@@ -65,6 +52,24 @@ const Proyects = ({t}) => {
               <DiPostgresql color="#FE0072" size="1.8rem" />
               <FaNodeJs color="#FE0072" size="1.8rem" />
               <SiJavascript color="#FE0072" size="1.8rem" />
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/TomasSorgetti"
+          className={styles.proyectMiddle}
+          target="_blank"
+        >
+          <div className={styles.imageCont}>
+            <img src={luthier} alt="proyect" />
+          </div>
+          <div className={styles.textCont}>
+            <h4>La Casa del Luthier</h4>
+            <div className={styles.tecnology}>
+              <AiFillHtml5 color="#FE0072" size="1.8rem" />
+              <DiCss3 color="#FE0072" size="1.8rem" />
+              <FaSass color="#FE0072" size="1.8rem" />
             </div>
           </div>
         </a>
