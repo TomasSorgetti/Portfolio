@@ -200,6 +200,7 @@ const Portfolio = ({t}) => {
           {t("TXT1")}
           {t("TXT2")}
           {t("TXT3")}
+          <br />
           {t("TXT4")}
           {t("TXT5")}
           {t("TXT6")}
