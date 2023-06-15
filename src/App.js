@@ -21,7 +21,7 @@ i18n.use(initReactI18next).init({
       translation: {
         Desarrollador: "Full Stack Developer",
         Sobre_Mí: "About",
-        Proyectos: "Proyects",
+        Proyectos: "Projects",
         Contacto: "Contact",
         Contactame: "Contact",
         TXT1: "I am a full stack web developer with a special focus on",

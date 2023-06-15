@@ -402,15 +402,15 @@ $textColor: #D1D1D1;
                 }
             }
         .about{
+            margin-top: 180px;
+            width: 90%;
             h3{
-                top: -110px;
-                left: 15%;
+                top: -80px;
+                left: 32%;
                 font-size: 24px;
             }
             p{
                 text-align: center;
-                width: 95%;
-                margin: 0 auto;
             }
         }
         .contact {
@@ -445,6 +445,12 @@ $textColor: #D1D1D1;
                     margin-left: 10%;
                 }
 
+            }
+        }
+        .about{
+            h3{
+                top: -80px;
+                left: 28%;
             }
         }
     }
