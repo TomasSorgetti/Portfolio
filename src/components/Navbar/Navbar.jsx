@@ -1,20 +1,13 @@
-import React, {useEffect} from "react";
+import React from "react";
 import styles from "./Navbar.module.scss";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 const NavBar = ({ t, i18n }) => {
-  useEffect(() => {
-    const lng = localStorage.getItem("lang")
-    if (lng && lng !== "es") {
-      i18n.changeLanguage(lng);
-    }
-  }, [localStorage]);
 
   const handleClick = (e, prop) => {
     e.preventDefault();
-    localStorage.setItem("lang",prop)
     i18n.changeLanguage(prop);
   };
 
