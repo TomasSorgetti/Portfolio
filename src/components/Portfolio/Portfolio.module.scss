@@ -212,7 +212,7 @@ $textColor: #D1D1D1;
                 font-style: normal;
                 transform: rotate(-90deg);
                 position: absolute;
-                bottom: 75px;
+                bottom: 120px;
                 right: -250px;
                 font-weight: 400;
                 font-size: 55px;
@@ -291,7 +291,9 @@ $textColor: #D1D1D1;
                     font-size: 50px;
                 }
                 .underTitle{
-                    font-size: 16px;
+                    h2{
+                        font-size: 16px;
+                    }
                 }
             }
         }
@@ -394,7 +396,7 @@ $textColor: #D1D1D1;
                     }
         
                     .underTitle {
-                        font-size: 10px;
+                        font-size: 6px;
                     }
                 }
             }
@@ -412,18 +414,36 @@ $textColor: #D1D1D1;
         }
         .contact {
             .contactLinks {
-                width: 60%;
+                width: 90%;
                 margin: 0 auto;
+                h3 {
+                    font-size: 42px;
+                    left: 16%;
+                }
 
                 .linkCont {
                     width: 80%;
-                    margin-left: 16%;
+                    margin-left: 18%;
                 }
 
+            }
+        }
+    }
+}
+@media screen and (max-width:430px){
+.portfolio {
+        .contact {
+            .contactLinks {
                 h3 {
                     font-size: 42px;
-                    right: 18%;
+                    left: 6%;
                 }
+
+                .linkCont {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+
             }
         }
     }

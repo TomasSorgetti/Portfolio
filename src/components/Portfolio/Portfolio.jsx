@@ -33,6 +33,11 @@ const Portfolio = ({t}) => {
   const isInView = useInView(ref,{once:true})
   const mainControlls = useAnimation()
 
+  
+
+
+
+
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, -600);
   const y2 = useParallax(scrollYProgress, 100);
@@ -118,11 +123,11 @@ const Portfolio = ({t}) => {
               </motion.li>
             </ul>
           </div>
-          <div className={styles.headerImageCont} style={{y}} >
+          <div className={styles.headerImageCont} style={{ y }}>
             <img className={styles.imageCont} src={frontImage} alt="" />
             <button>
               {" "}
-              <a href=""> {t("Contactame")}</a>
+              <a href="#contact"> {t("Contactame")}</a>
             </button>
           </div>
           <div className={styles.headerItemsRight}>
