@@ -7,7 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 const NavBar = ({ t, i18n }) => {
   useEffect(() => {
     const lng = localStorage.getItem("lang")
-    if (lng !== "es") {
+    if (lng && lng !== "es") {
       i18n.changeLanguage(lng);
     }
   }, [localStorage]);
