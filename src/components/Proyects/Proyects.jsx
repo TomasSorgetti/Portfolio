@@ -33,7 +33,7 @@ const Proyects = ({t}) => {
       <h3>{t("Proyectos")}</h3>
       <section>
         <a
-          href="https://github.com/TomasSorgetti"
+          href="https://github.com/TomasSorgetti/Videogames"
           className={styles.proyect}
           target="_blank"
         >
