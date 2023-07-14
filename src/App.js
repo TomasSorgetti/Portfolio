@@ -63,7 +63,12 @@ function App() {
   const { scrollYProgress } = useScroll({ target: ref });
 
   const scale = useTransform(scrollYProgress, [0.1, 0.4, 0.95], [1, 1.5, 1.5])
-  
+  useEffect(() => {
+    const language = localStorage.getItem("lang");
+    if (language && language !== i18n.language) {
+      i18n.changeLanguage(language);
+    }
+  },[])
   return (
     <div ref={ref} className="App" id="app" style={{ overflow: "hidden" }}>
       <NavBar t={t} i18n={i18n} />

@@ -5,9 +5,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 const NavBar = ({ t, i18n }) => {
-
   const handleClick = (e, prop) => {
     e.preventDefault();
+    localStorage.setItem("lang",prop)
     i18n.changeLanguage(prop);
   };
 
@@ -49,35 +49,6 @@ const NavBar = ({ t, i18n }) => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    // <div className={styles.navCont} id="header">
-    //   <a className={styles.logo}>Tomás Sorgetti</a>
-    //   <div className={styles.navLinks}>
-    //     <a href="#about" className={styles.link}>
-    //       {t("Sobre_Mí")}
-    //     </a>
-    //     <a href="#proyects" className={styles.link}>
-    //       {t("Proyectos")}
-    //     </a>
-    //     <a href="#contact" className={styles.link}>
-    //       {t("Contacto")}
-    //     </a>
-    //     <div className={styles.lang}>
-    //       <button
-    //         onClick={(e) => handleClick(e, "es")}
-    //         className={i18n.language === "es" ? styles.active : ""}
-    //       >
-    //         ES
-    //       </button>
-    //       <div className={styles.langSep}></div>
-    //       <button
-    //         onClick={(e) => handleClick(e, "en")}
-    //         className={i18n.language === "en" ? styles.active : ""}
-    //       >
-    //         EN
-    //       </button>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
