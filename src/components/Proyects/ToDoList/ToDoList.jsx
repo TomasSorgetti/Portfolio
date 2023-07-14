@@ -18,7 +18,7 @@ const ToDoList = () => {
         <img src={todoList} alt="proyect" />
       </div>
       <div className={styles.textCont}>
-        <h4>La Casa del Luthier</h4>
+        <h4>ToDo List</h4>
         <div className={styles.tecnology}>
           <FaReact color="#FE0072" size="1.8rem" />
           <SiJavascript color="#FE0072" size="1.8rem" />
