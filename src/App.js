@@ -42,7 +42,7 @@ i18n.use(initReactI18next).init({
         TXT1: "Soy un desarrollador web full stack con un enfoque especial en el front-end.",
         TXT2: " Mi curiosidad y deseo de perfeccionamiento me condujo a convertirme en un",
         TXT3: " luthier y, posteriormente, a involucrarme en el desarrollo de sitios web.",
-        TXT4: " Mi objetivo es crear experiencias en línea",
+        TXT4: " Mi objetivo es crear experiencias en línea ",
         TXT5: "excepcionales para los usuarios, centrándome en la usabilidad, el",
         TXT6: "diseño atractivo y la optimización del rendimiento.",
       },

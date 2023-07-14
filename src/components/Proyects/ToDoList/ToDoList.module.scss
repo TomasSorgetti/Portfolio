@@ -1,0 +1,60 @@
+.proyect {
+    background: radial-gradient(60.38% 60.38% at 39.23% 43.37%, #302856 0%, #080516 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        , #151629;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+
+    .imageCont {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+
+        img {
+            height: 110%;
+            width: 100%;
+            object-position: center;
+            object-fit: contain;
+        }
+    }
+
+    &:hover .textCont {
+        opacity: 1;
+        transition: 0.2s;
+    }
+
+    .textCont {
+        opacity: 0;
+        height: 150px;
+        width: 100%;
+        background-color: #080516;
+        color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        h4 {
+            font-family: 'Days One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 66px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .tecnology {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}

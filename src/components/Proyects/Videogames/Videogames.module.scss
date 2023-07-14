@@ -1,0 +1,86 @@
+.proyect {
+    width: 100%;
+    height: 100%;    
+    position: relative;
+    overflow: hidden;
+
+    .imageContVideogames {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .videogamesCont {
+            width: 80%;
+            height: 70%;
+            margin: auto auto;
+            background-color: red;
+            position: relative;
+            overflow: hidden;
+
+            .image1 {
+                position: absolute;
+                height: 55%;
+                z-index: 1;
+            }
+
+            .image2 {
+                height: 50%;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+
+    .imageCont {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-position: -30px 50px;
+            object-fit: contain;
+        }
+    }
+
+    &:hover .textCont {
+        opacity: 1;
+        transition: 0.2s;
+    }
+
+    .textCont {
+        opacity: 0;
+        height: 150px;
+        width: 100%;
+        background-color: #080516;
+        color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        h4 {
+            font-family: 'Days One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 66px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .tecnology {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}

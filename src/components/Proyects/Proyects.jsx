@@ -1,23 +1,43 @@
-import React from 'react'
-import piProyect1 from "../../assets/img/piProyect1.png"
-import piProyect2 from "../../assets/img/piProyect2.png"
-import luthier from "../../assets/img/luthier.png"
-import pasteleria from "../../assets/img/pastelería.png"
-import styles from "./Proyects.module.scss"
+import React, { useState } from "react";
+import styles from "./Proyects.module.scss";
 import { motion } from "framer-motion";
 
-import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import { DiPostgresql } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3 } from "react-icons/di";
-import { FaSass } from "react-icons/fa";
+//components imports
+import Videogames from "./Videogames/Videogames";
+import Luthier from "./Luthier/Luthier";
+import Pasteleria from "./Pasteleria/Pasteleria";
+import ToDoList from "./ToDoList/ToDoList";
 
+//icons imports
+import { FcPrevious } from "react-icons/fc";
+import { FcNext } from "react-icons/fc";
 
+const Proyects = ({ t }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const projects = [<Videogames />, <Luthier />, <Pasteleria />, <ToDoList />];
 
-const Proyects = ({t}) => {
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) =>(prevIndex - 1 + projects.length) %projects.length)
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) => prevIndex + 1);
+  };
+
+  const getVisibleProjects = () => {
+    const startIndex = activeIndex % projects.length;
+    const visibleProjects = [];
+
+    for (let i = 0; i < 3; i++) {
+      const projectIndex = (startIndex + i) % projects.length;
+      visibleProjects.push(projects[projectIndex]);
+    }
+
+    return visibleProjects;
+  };
+
+  const visibleProjects = getVisibleProjects();
+
   return (
     <motion.div
       id="proyects"
@@ -32,75 +52,34 @@ const Proyects = ({t}) => {
     >
       <h3>{t("Proyectos")}</h3>
       <section>
-        <a
-          href="https://github.com/TomasSorgetti/Videogames"
-          className={styles.proyect}
-          target="_blank"
+        <button
+          className={styles.prevButton}
+          type="button"
+          onClick={handlePrev}
         >
-          <div className={styles.imageContVideogames}>
-            <div className={styles.videogamesCont}>
-              <img className={styles.image1} src={piProyect1} alt="proyect" />
-              <img className={styles.image2} src={piProyect2} alt="proyect" />
-            </div>
-          </div>
-          <div className={styles.textCont}>
-            <h4>Videogames</h4>
-            <div className={styles.tecnology}>
-              <FaReact color="#FE0072" size="1.8rem" />
-              <SiRedux color="#FE0072" size="1.8rem" />
-              <DiCss3 color="#FE0072" size="1.8rem" />
-              <DiPostgresql color="#FE0072" size="1.8rem" />
-              <FaNodeJs color="#FE0072" size="1.8rem" />
-              <SiJavascript color="#FE0072" size="1.8rem" />
-            </div>
-          </div>
-        </a>
+          <FcPrevious size={"3rem"} style={{ color: "red" }} />
+        </button>
 
-        <a
-          href="https://tomassorgetti.github.io/La-Casa-Del-Luthier/index.html"
-          className={styles.proyectMiddle}
-          target="_blank"
+        {visibleProjects.map((project, index) => (
+          <div
+            key={index}
+            className={`${styles.poyectCont} ${
+              index === 1 ? styles.active : ""
+            }`}
+          >
+            {project}
+          </div>
+        ))}
+        <button
+          className={styles.nextButton}
+          type="button"
+          onClick={handleNext}
         >
-          <div className={styles.imageCont}>
-            <img src={luthier} alt="proyect" />
-          </div>
-          <div className={styles.textCont}>
-            <h4>La Casa del Luthier</h4>
-            <div className={styles.tecnology}>
-              <AiFillHtml5 color="#FE0072" size="1.8rem" />
-              <DiCss3 color="#FE0072" size="1.8rem" />
-              <FaSass color="#FE0072" size="1.8rem" />
-            </div>
-          </div>
-        </a>
-
-        <a
-          href="https://pf-front-eegvakue1-22-00.vercel.app/home"
-          className={styles.proyect}
-          target="_blank"
-        >
-          <div className={styles.imageCont}>
-            <img
-              src={pasteleria}
-              alt="proyect"
-              style={{ objectFit: "contain" }}
-            />
-          </div>
-          <div className={styles.textCont}>
-            <h4>Ohana Pastelería</h4>
-            <div className={styles.tecnology}>
-              <FaReact color="#FE0072" size="1.8rem" />
-              <SiRedux color="#FE0072" size="1.8rem" />
-              <DiCss3 color="#FE0072" size="1.8rem" />
-              <DiPostgresql color="#FE0072" size="1.8rem" />
-              <FaNodeJs color="#FE0072" size="1.8rem" />
-              <SiJavascript color="#FE0072" size="1.8rem" />
-            </div>
-          </div>
-        </a>
+          <FcNext size={"3rem"} />
+        </button>
       </section>
     </motion.div>
   );
-}
+};
 
-export default Proyects
+export default Proyects;

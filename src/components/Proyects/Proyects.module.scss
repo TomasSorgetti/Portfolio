@@ -20,136 +20,25 @@
         gap: 20px;
         align-items: center;
         justify-content: center;
-        .proyectMiddle{
-            background: radial-gradient(60.38% 60.38% at 39.23% 43.37%, #302856 0%, #080516 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #151629;
+        .poyectCont{
             width: 353px;
-            height: 530px;
-            border-radius: 20px;
-            position: relative;
-            overflow: hidden;
-            .imageCont{
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
+                height: 450px;
+                background: radial-gradient(60.38% 60.38% at 39.23% 43.37%, #302856 0%, #080516 100%)
+                        , #151629;
                 border-radius: 20px;
-                img{
-                    height: 100%;
-                    width: 100%;
-                    object-fit: contain; 
-                }
-            }
-            &:hover .textCont{
-                opacity: 1;
-                transition: 0.2s;
-            }
-            .textCont{
-                opacity: 0;
-                height: 150px;
-                width: 100%;
-                background-color: #080516;
-                color: #ffffff;
-                position: absolute;
-                bottom: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                h4{
-                    font-family: 'Days One';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 22px;
-                        line-height: 66px;
-                        margin: 0;
-                        text-transform: uppercase;
-                }
-                .tecnology{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 10px;
-                }
-            }
+
+        }
+        .prevButton, .nextButton{
+            background-color: transparent;
+            border: none;
+        }
+        .active{
+            height: 530px;
+        }
+        .hidden{
+            display: none;
         }
         
-        .proyect{
-            background: radial-gradient(60.38% 60.38% at 39.23% 43.37%, #302856 0%, #080516 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #151629;
-            width: 353px;
-            height: 450px;
-            border-radius: 20px;
-            position: relative;
-            overflow: hidden;
-            .imageContVideogames{
-                height: 100%;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .videogamesCont{
-                    width: 80%;
-                    height: 70%;
-                    margin: auto auto;
-                    background-color: red;
-                    position: relative;
-                    overflow: hidden;
-                    .image1{
-                        position: absolute;
-                        height: 55%;
-                        z-index: 1;
-                    }
-                    .image2{
-                        height: 50%;
-                        width: 100%;
-                        position: absolute;
-                        bottom: 0;
-                    }
-                }
-            }
-            .imageCont{
-                width: 100%;
-                height: 100%;                
-                overflow: hidden;
-                border-radius: 20px;
-                img{
-                    height: 100%;
-                    width: 100%;
-                    object-position: -30px 50px;
-                    object-fit: contain; 
-                }
-            }
-            &:hover .textCont{
-                opacity: 1;
-                transition: 0.2s;
-            }
-            .textCont{
-                opacity: 0;
-                height: 150px;
-                width: 100%;
-                background-color: #080516;
-                color: #ffffff;
-                position: absolute;
-                bottom: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                h4{
-                    font-family: 'Days One';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 22px;
-                        line-height: 66px;
-                        margin: 0;
-                        text-transform: uppercase;
-                }
-                .tecnology{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 10px;
-                }
-            }
-        }
     }
 }
 @media screen and (max-width:1200px) {
@@ -158,14 +47,28 @@
             font-size: 46px;
         }
         section{
-            gap: 15px;
-            .proyectMiddle{
-                width: 253px;
-                height: 400px;
+            position: relative;
+            gap: 5px;
+            .poyectCont{
+                width: 300px;
+                height: 380px;
+                display: none;
+            }
+            .active{
+            height: 480px;
+            display: block;
+            }
+            .prevButton{
+                position: absolute;
+                left: -150px;
+            }
+            .nextButton{
+                position: absolute;
+                right: -150px;
             }
             .proyect{
-                width: 253px;
-                height: 320px;
+                width: 233px;
+                height: 300px;
                 .textCont{
                     h4{
                         font-size: 16px;
@@ -175,6 +78,7 @@
         }
     }
 }
+
 @media screen and (max-width:980px) {
     .proyectsCont {
             h3 {
@@ -182,12 +86,8 @@
             }
     
             section {
-                gap: 10px;
-                .proyectMiddle {
-                    width: 223px;
-                    height: 320px;
-                }
-    
+                flex-direction: column;
+                    gap: 30px;
                 .proyect {
                     width: 203px;
                     height: 270px;
@@ -209,13 +109,14 @@
     
             section {
                 flex-direction: column;
-                gap: 30px;
-    
-                .proyectMiddle {
-                    width: 300px;
-                    height: 350px;
-                }
-    
+                gap: 30px; 
+                .prevButton {
+                        left: -80px;
+                    }
+                
+                    .nextButton {
+                        right: -80px;
+                    }
                 .proyect {
                     width: 300px;
                     height: 350px;
@@ -228,4 +129,28 @@
                 }
             }
         }
+}
+@media screen and (max-width:640px) {
+    .proyectsCont {
+        section {
+            .prevButton {
+                left: -60px;
+            }
+            .nextButton {
+                right: -60px;
+            }
+        }}
+}
+@media screen and (max-width:400px) {
+    .proyectsCont {
+        section {
+            .prevButton {
+                left: -40px;
+            }
+
+            .nextButton {
+                right: -40px;
+            }
+        }
+    }
 }
