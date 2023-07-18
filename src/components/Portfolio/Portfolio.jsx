@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 //imports components
 import Proyects from '../Proyects/Proyects';
-
+import EmailSend from '../Form/Form';
 //imports styles
 import styles from "./Portfolio.module.scss"
 import { AiOutlineLinkedin } from "react-icons/ai";
@@ -221,43 +221,7 @@ const Portfolio = ({t}) => {
         whileInView="visible"
         transition={{ duration: 0.6, delay: 0.15 }}
       >
-        <div className={styles.contactLinks}>
-          <div className={styles.linkCont}>
-            <a
-              href="https://www.linkedin.com/in/tomas-sorgetti/"
-              target="_blank"
-              className={styles.links}
-            >
-              <AiOutlineLinkedin size="24px" />
-              <a className={styles.link}>Tomás Sorgetti</a>
-            </a>
-            <a
-              href="mailto:tomassorgetti456@gmail.com"
-              target="_blank"
-              className={styles.links}
-            >
-              <AiOutlineMail size="24px" />
-              <a className={styles.link}>tomassorgetti456@gmail.com</a>
-            </a>
-            <a
-              href="https://wa.me/541136323780"
-              target="_blank"
-              className={styles.links}
-            >
-              <BsWhatsapp size="24px" />
-              <a className={styles.link}>+54 11 3632-3780</a>
-            </a>
-            <a
-              href="https://github.com/TomasSorgetti"
-              target="_blank"
-              className={styles.links}
-            >
-              <AiOutlineGithub size="24px" />
-              <a className={styles.link}>TomasSorgetti</a>
-            </a>
-          </div>
-          <h3>{t("Contacto")}</h3>
-        </div>
+          <EmailSend/>
       </motion.section>
     </div>
   );

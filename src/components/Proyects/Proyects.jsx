@@ -15,27 +15,22 @@ import { FcNext } from "react-icons/fc";
 const Proyects = ({ t }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const projects = [<Videogames />, <Luthier />, <Pasteleria />, <ToDoList />];
-
+  
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>(prevIndex - 1 + projects.length) %projects.length)
   };
-
   const handleNext = () => {
     setActiveIndex((prevIndex) => prevIndex + 1);
   };
-
   const getVisibleProjects = () => {
     const startIndex = activeIndex % projects.length;
     const visibleProjects = [];
-
     for (let i = 0; i < 3; i++) {
       const projectIndex = (startIndex + i) % projects.length;
       visibleProjects.push(projects[projectIndex]);
     }
-
     return visibleProjects;
   };
-
   const visibleProjects = getVisibleProjects();
 
   return (

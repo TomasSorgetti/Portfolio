@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.0",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^10.12.16",
     "i18next": "^22.5.1",
     "i18next-browser-languagedetector": "^7.0.2",
@@ -22,6 +23,7 @@
     "react-slick": "^0.29.0",
     "sass": "^1.63.3",
     "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.7.18",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
