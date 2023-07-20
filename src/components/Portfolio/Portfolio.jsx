@@ -1,20 +1,19 @@
 //imports
-import React from 'react'
+import React from "react";
 import { useEffect, useRef } from "react";
 
 //imports components
-import Proyects from '../Proyects/Proyects';
-import EmailSend from '../Form/Form';
+import Proyects from "../Proyects/Proyects";
+import EmailSend from "../Form/Form";
 //imports styles
-import styles from "./Portfolio.module.scss"
+import styles from "./Portfolio.module.scss";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 
 //import images
-import frontImage from "../../assets/img/tom5 1.png"
-
+import frontImage from "../../assets/img/tom5 1.png";
 
 import {
   motion,
@@ -28,22 +27,17 @@ function useParallax(value, distance) {
   return useTransform(value, [1, 0], [-distance, 0]);
 }
 
-const Portfolio = ({t}) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref,{once:true})
-  const mainControlls = useAnimation()
-
-  
-
-
-
+const Portfolio = ({ t }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const mainControlls = useAnimation();
 
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, -600);
   const y2 = useParallax(scrollYProgress, 100);
-  
+
   const x = useTransform(scrollYProgress, [0, 1], [0, -700]);
-  const x2 = useTransform(scrollYProgress, [0, 1], [0, 700])
+  const x2 = useTransform(scrollYProgress, [0, 1], [0, 700]);
 
   useEffect(() => {
     if (isInView) {
@@ -197,7 +191,9 @@ const Portfolio = ({t}) => {
         whileInView="visible"
         transition={{ duration: 0.6, delay: 0.45 }}
       >
-        <h3>{t("Sobre_Mí")}</h3>
+        <div className={styles.aboutTitle}>
+          <h3>{t("Sobre_Mí")}</h3>
+        </div>
         <div>
           <p>
             {t("TXT1")}
@@ -227,6 +223,6 @@ const Portfolio = ({t}) => {
       </motion.section>
     </div>
   );
-}
+};
 
-export default Portfolio
+export default Portfolio;

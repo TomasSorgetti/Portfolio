@@ -153,10 +153,14 @@ $textColor: #D1D1D1;
         margin: 160px auto;
         gap: 10px;
         position: relative;
-        h3{
+        .aboutTitle{
             position: absolute;
+            width: 250px;
             top: 100px;
-            left: -130px;
+            left: -170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             transform: rotate(-90deg);
             font-family: 'Days One';
             font-style: normal;
@@ -266,7 +270,7 @@ $textColor: #D1D1D1;
                 }
             }
             .about{
-            h3{
+            .aboutTitle{
                 font-size: 28px;
                 top: 100px;
 
@@ -325,7 +329,7 @@ $textColor: #D1D1D1;
             }
         }
         .about{
-            h3{
+            .aboutTitle{
                 top: 150px;
 
             }
@@ -377,9 +381,9 @@ $textColor: #D1D1D1;
         .about{
             margin-top: 180px;
             width: 90%;
-            h3{
+            .aboutTitle{
                 top: -80px;
-                left: 40%;
+                left: 29%;
                 transform: rotate(0deg);
             }
             p{
@@ -435,9 +439,9 @@ $textColor: #D1D1D1;
                 }
             }
         .about{
-            h3{
+            .aboutTitle{
                 top: -80px;
-                left: 38%;
+                left: 20%;
                 font-size: 24px;
             }
             p{
@@ -490,9 +494,9 @@ $textColor: #D1D1D1;
             }
         }
         .about{
-            h3{
+            .aboutTitle{
                 top: -80px;
-                left: 34%;
+                left: 16%;
             }
         }
     }
@@ -507,6 +511,11 @@ $textColor: #D1D1D1;
                     }
                 }
 
+            }
+        }
+        .about{
+            .aboutTitle{
+                left: 10%;
             }
         }
     }
