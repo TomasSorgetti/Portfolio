@@ -125,9 +125,11 @@ const Portfolio = ({t}) => {
           </div>
           <div className={styles.headerImageCont} style={{ y }}>
             <img className={styles.imageCont} src={frontImage} alt="" />
-            <button id="buttonContact">
-              {" "}
-              <a href="#contact"> {t("Contactame")}</a>
+            <button>
+              <a id="buttonContact" href="#contact">
+                {" "}
+                {t("Contactame")}
+              </a>
             </button>
           </div>
           <div className={styles.headerItemsRight}>
@@ -221,7 +223,7 @@ const Portfolio = ({t}) => {
         whileInView="visible"
         transition={{ duration: 0.6, delay: 0.15 }}
       >
-          <EmailSend/>
+        <EmailSend />
       </motion.section>
     </div>
   );

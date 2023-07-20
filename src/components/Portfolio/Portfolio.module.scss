@@ -108,6 +108,7 @@ $textColor: #D1D1D1;
         .headerImageCont{
             width: 600px;
             height: 600px;
+            position: relative;
             .imageCont{
                 width: 100%;
                 height: 100%;
@@ -117,8 +118,7 @@ $textColor: #D1D1D1;
                 position: absolute;
                 z-index: 5px;        
                 bottom: -15px;
-                left: 35%;
-                z-index: 2;
+                left: 30%;
                 background: linear-gradient(to right, #E80ECD, #FE0072);
                 width: 197px;
                 height: 47px;
@@ -127,6 +127,7 @@ $textColor: #D1D1D1;
                 border: 1px solid #FE0072;
                 cursor: pointer;
                 a{
+                    padding: 10px 50px;
                     text-transform: uppercase;
                     text-decoration: none;
                     color: $fontColor;
@@ -267,7 +268,7 @@ $textColor: #D1D1D1;
             .about{
             h3{
                 font-size: 28px;
-                top: 120px;
+                top: 100px;
 
             }
             p{
@@ -307,6 +308,9 @@ $textColor: #D1D1D1;
                     .headerImageCont {
                         width: 450px;
                         height: 350px;
+                        button {
+                                left: 25%;
+                            }
                     }
                 }
             .title{
@@ -318,6 +322,12 @@ $textColor: #D1D1D1;
                         font-size: 16px;
                     }
                 }
+            }
+        }
+        .about{
+            h3{
+                top: 150px;
+
             }
         }
         .contact{
@@ -349,7 +359,7 @@ $textColor: #D1D1D1;
                     }
                     .headerImageCont{
                         button {
-                                left: 30%;
+                                left: 25%;
                             }
                     }
             
@@ -369,7 +379,7 @@ $textColor: #D1D1D1;
             width: 90%;
             h3{
                 top: -80px;
-                left: 35%;
+                left: 40%;
                 transform: rotate(0deg);
             }
             p{
@@ -410,7 +420,7 @@ $textColor: #D1D1D1;
                         width: 100%;
                         height: 350px;
                         button{
-                            left: 22%;
+                            left: 28%;
                         }
                 }
 
@@ -419,17 +429,15 @@ $textColor: #D1D1D1;
                     h1 {
                         font-size: 28px;
                     }
-        
                     .underTitle {
                         font-size: 6px;
                     }
                 }
             }
         .about{
-
             h3{
                 top: -80px;
-                left: 32%;
+                left: 38%;
                 font-size: 24px;
             }
             p{
@@ -457,6 +465,16 @@ $textColor: #D1D1D1;
 }
 @media screen and (max-width:430px){
 .portfolio {
+        .headerCont {
+            .header {
+                .headerImageCont {
+                    button {
+                        left: 24%;
+                    }
+                }
+    
+            }
+        }
         .contact {
             .contactLinks {
                 h3 {
@@ -474,7 +492,21 @@ $textColor: #D1D1D1;
         .about{
             h3{
                 top: -80px;
-                left: 28%;
+                left: 34%;
+            }
+        }
+    }
+}
+@media screen and (max-width:340px) {
+    .portfolio {
+        .headerCont {
+            .header {
+                .headerImageCont {
+                    button {
+                        left: 20%;
+                    }
+                }
+
             }
         }
     }

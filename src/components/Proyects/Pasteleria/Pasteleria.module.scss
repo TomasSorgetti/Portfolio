@@ -3,7 +3,7 @@
         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
         , #151629;
     width: 100%;
-        height: 100%;
+    height: 100%;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
@@ -13,11 +13,10 @@
         height: 100%;
         overflow: hidden;
         border-radius: 20px;
-
         img {
             height: 100%;
             width: 100%;
-            object-position: -30px 50px;
+            object-position: -30px 80px;
             object-fit: contain;
         }
     }
