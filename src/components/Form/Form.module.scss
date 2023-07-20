@@ -4,29 +4,36 @@
     gap: 26px;
     width: 80%;
     align-items: center;
+    label{
+        font-family: 'Days One';
+    }
     .nameCont{
         display: flex;
         flex-direction: column;
         position: relative;
         width: 100%;
+        gap:5px;
     }
     .emailCont{
         display: flex;
         flex-direction: column;
         position: relative;
         width: 100%;
+        gap:5px;
     }
     .subjectCont{
         display: flex;
         flex-direction: column;
         position: relative;
         width: 100%;
+        gap:5px;
     }
     .messageCont{
         display: flex;
         flex-direction: column;
         width: 100%;
         position: relative;
+        gap:5px;
         input{
             height: 40px;
         }
@@ -39,6 +46,7 @@
     .buttonCont{
         margin-top: 20px;
         button{
+            font-family: 'Days One';
             background: linear-gradient(to right, #E80ECD, #FE0072);
                 width: 197px;
                 height: 47px;
@@ -51,11 +59,15 @@
                 color: white;
                 font-size: 16px;
                 line-height: 27.2px;
-                font-weight: 700;
+                font-weight: 500;
             &:hover {
                     background: linear-gradient(to right, #f96de8, #bf0056);
                     box-shadow: 0px 0px 10px rgba(168, 80, 120, 0.15), 0px 0px 15px #b60152;
                 }
+            &:active{
+                box-shadow: 10px 10px 10px rgba(168, 80, 120, 0.15), 0px 0px 15px #b60152;
+                font-weight: 600;
+            }
         }
 
     }

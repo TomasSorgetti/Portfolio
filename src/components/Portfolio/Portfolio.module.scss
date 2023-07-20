@@ -115,6 +115,7 @@ $textColor: #D1D1D1;
             }
             button{
                 position: absolute;
+                z-index: 5px;        
                 bottom: -15px;
                 left: 35%;
                 z-index: 2;
@@ -137,6 +138,9 @@ $textColor: #D1D1D1;
                     background: linear-gradient(to right, #f96de8, #bf0056);
                     box-shadow: 0px 0px 10px rgba(168, 80, 120, 0.15), 0px 0px 15px #b60152;
                 }
+                &:active{
+                box-shadow: 10px 10px 10px rgba(168, 80, 120, 0.15), 0px 0px 15px #b60152;
+            }
             }
         }
     }
