@@ -77,7 +77,7 @@ const Portfolio = ({ t }) => {
                 transition={{ duration: 0.5, delay: 0.25 }}
                 style={{ x }}
               >
-                <p>HTML</p>
+                <p className={styles.tecnology}>HTML</p>
               </motion.li>
               <motion.li
                 variants={{
@@ -89,7 +89,7 @@ const Portfolio = ({ t }) => {
                 transition={{ duration: 0.5, delay: 0.35 }}
                 style={{ x, transition: { delay: 0.4 } }}
               >
-                <p>CSS</p>
+                <p className={styles.tecnology}>CSS</p>
               </motion.li>
               <motion.li
                 variants={{
@@ -101,7 +101,7 @@ const Portfolio = ({ t }) => {
                 transition={{ duration: 0.5, delay: 0.45 }}
                 style={{ x, transition: { delay: 0.2 } }}
               >
-                <p>REACT</p>
+                <p className={styles.tecnology}>REACT</p>
               </motion.li>
               <motion.li
                 variants={{
@@ -113,7 +113,7 @@ const Portfolio = ({ t }) => {
                 transition={{ duration: 0.5, delay: 0.55 }}
                 style={{ x }}
               >
-                <p>JAVASCRIPT</p>
+                <p className={styles.tecnology}>JAVASCRIPT</p>
               </motion.li>
             </ul>
           </div>
@@ -138,7 +138,7 @@ const Portfolio = ({ t }) => {
                 transition={{ duration: 0.5, delay: 0.25 }}
                 style={{ x: x2, y: y2, transition: { delay: 0.6 } }}
               >
-                <p>REDUX</p>
+                <p className={styles.tecnology}>REDUX</p>
               </motion.li>
               <motion.li
                 variants={{
@@ -150,7 +150,7 @@ const Portfolio = ({ t }) => {
                 transition={{ duration: 0.5, delay: 0.35 }}
                 style={{ x: x2, y: y2, transition: { delay: 0.4 } }}
               >
-                <p>NODE</p>
+                <p className={styles.tecnology}>NODE</p>
               </motion.li>
               <motion.li
                 variants={{
@@ -162,7 +162,7 @@ const Portfolio = ({ t }) => {
                 transition={{ duration: 0.5, delay: 0.45 }}
                 style={{ x: x2, y: y2, transition: { delay: 0.2 } }}
               >
-                <p>EXPRESS</p>
+                <p className={styles.tecnology}>EXPRESS</p>
               </motion.li>
               <motion.li
                 variants={{
@@ -174,7 +174,7 @@ const Portfolio = ({ t }) => {
                 transition={{ duration: 0.5, delay: 0.55 }}
                 style={{ x: x2, y: y2 }}
               >
-                <p>POSTGRESQL</p>
+                <p className={styles.tecnology}>SEQUELIZE</p>
               </motion.li>
             </ul>
           </div>
