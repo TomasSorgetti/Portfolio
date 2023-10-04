@@ -7,6 +7,7 @@ import Videogames from "./Videogames/Videogames";
 import Luthier from "./Luthier/Luthier";
 import Pasteleria from "./Pasteleria/Pasteleria";
 import ToDoList from "./ToDoList/ToDoList";
+import Learning from "./Learning/Learning";
 
 //icons imports
 import { FcPrevious } from "react-icons/fc";
@@ -14,7 +15,7 @@ import { FcNext } from "react-icons/fc";
 
 const Proyects = ({ t }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const projects = [<Videogames />, <Luthier />, <Pasteleria />, <ToDoList />];
+  const projects = [<Videogames />, <Learning/>, <Luthier />, <Pasteleria />, <ToDoList />];
   
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>(prevIndex - 1 + projects.length) %projects.length)
