@@ -11,7 +11,6 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
-
 //import images
 import frontImage from "../../assets/img/tom5 1.png";
 
@@ -45,6 +44,7 @@ const Portfolio = ({ t }) => {
     }
   }, [isInView]);
 
+  const items = ["HTMl5","CSS3","Javascript","Tailwind","React","Redux","Node","Express","Sequelize"]
   return (
     <div ref={ref} className={styles.portfolio}>
       <section className={styles.headerCont}>
@@ -180,6 +180,19 @@ const Portfolio = ({ t }) => {
           </div>
         </div>
       </section>
+      <section className={styles.scroller}>
+        <ul className={styles.scrollerInner}>
+          {items?.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+        <ul className={styles.scrollerInner}>
+          {items?.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
       <motion.section
         className={styles.about}
         id="about"

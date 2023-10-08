@@ -11,7 +11,7 @@ import { SiTailwindcss } from "react-icons/si";
 const Learning = () => {
   return (
     <a
-      href="https://tomassorgetti.github.io/La-Casa-Del-Luthier/index.html"
+      href="https://www.learning-spark.com/"
       className={styles.proyect}
       target="blank"
     >
