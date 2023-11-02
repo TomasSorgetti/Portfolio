@@ -12,6 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Helmet>
+        <title>Hola Mundo</title>
         <meta
           name="description"
           content="Welcome to my Portfolio, I hope you like it!"
