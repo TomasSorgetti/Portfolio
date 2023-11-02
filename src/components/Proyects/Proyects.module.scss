@@ -1,4 +1,3 @@
-$fontColor: #ffffff;
 $textColor: #D1D1D1;
 
 @mixin column($direction,$gap) {
@@ -23,7 +22,9 @@ $textColor: #D1D1D1;
     .projects{
         @include column(column,40px);
         .project{
-            @include column(column,16px);            
+            cursor: pointer;
+            @include column(column,16px); 
+            text-decoration: none;           
             .projectImg {
                     width: 100%;
                 }
@@ -35,6 +36,7 @@ $textColor: #D1D1D1;
                         font-size: 1.5rem;
                         font-family: 'Days One';
                         font-style: normal;
+                        color: #ffffff;
                     }
                     p{
                         font-size: 1rem;
@@ -54,6 +56,7 @@ $textColor: #D1D1D1;
                         }
                         p{
                             margin: 0;
+                            color: #ffffff;
                         }
                     }
                 }
@@ -115,10 +118,38 @@ $textColor: #D1D1D1;
         .projects {
             .project {
                 .projectImg{
-                    width: 460px;
+                    width: 520px;
                 }
                 .textCont {
                     padding-left: 32px;
+                    .text {
+                            p {
+                                width: 600px;
+                            }
+                        }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1680px) {
+    .projectsCont {
+        padding: 300px;
+
+        .projects {
+            .project {
+                .projectImg {
+                    width: 620px;
+                }
+
+                .textCont {
+                    padding-left: 32px;
+
+                    .text {
+                        p {
+                            width: 700px;
+                        }
+                    }
                 }
             }
         }

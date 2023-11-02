@@ -17,8 +17,8 @@ const Proyects = ({ t }) => {
     >
       <h3>{t("Proyectos")}</h3>
       <article className={styles.projects}>
-        {projects?.map(({ image, name, text, tecnologys }, index) => (
-          <div className={styles.project} key={index}>
+        {projects?.map(({ image, name, text, tecnologys,link }, index) => (
+          <a href={link} target="blank" className={styles.project} key={index}>
             <img className={styles.projectImg} src={image} alt={name} />
             <div className={styles.textCont}>
               <div className={styles.text}>
@@ -34,7 +34,7 @@ const Proyects = ({ t }) => {
                 ))}
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </article>
     </motion.div>

@@ -30,6 +30,7 @@ const projects = [
         icon: tailwind,
       },
     ],
+    link: "https://www.learning-spark.com/",
   },
   {
     image: LaCasadelLuthier,
@@ -49,6 +50,7 @@ const projects = [
         icon: sass,
       },
     ],
+    link: "https://tomassorgetti.github.io/La-Casa-Del-Luthier",
   },
   {
     image: VideoGames,
@@ -76,6 +78,7 @@ const projects = [
         icon: sequelize,
       },
     ],
+    link: "https://github.com/TomasSorgetti/Videogames",
   },
   {
     image: TodoList,
@@ -91,6 +94,7 @@ const projects = [
         icon: tailwind,
       },
     ],
+    link: "https://to-do-list-pied-six.vercel.app/",
   },
   {
     image: PortfolioEuge,
@@ -106,6 +110,7 @@ const projects = [
         icon: tailwind,
       },
     ],
+    link: "https://euge-sorgetti.vercel.app/",
   },
 ];
 
