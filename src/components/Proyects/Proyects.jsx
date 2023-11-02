@@ -1,43 +1,12 @@
-import React, { useState } from "react";
 import styles from "./Proyects.module.scss";
 import { motion } from "framer-motion";
-
-//components imports
-import Videogames from "./Videogames/Videogames";
-import Luthier from "./Luthier/Luthier";
-import Pasteleria from "./Pasteleria/Pasteleria";
-import ToDoList from "./ToDoList/ToDoList";
-import Learning from "./Learning/Learning";
-
-//icons imports
-import { FcPrevious } from "react-icons/fc";
-import { FcNext } from "react-icons/fc";
+import projects from "./List";
 
 const Proyects = ({ t }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const projects = [<Videogames />, <Learning/>, <Luthier />, <Pasteleria />, <ToDoList />];
-  
-  const handlePrev = () => {
-    setActiveIndex((prevIndex) =>(prevIndex - 1 + projects.length) %projects.length)
-  };
-  const handleNext = () => {
-    setActiveIndex((prevIndex) => prevIndex + 1);
-  };
-  const getVisibleProjects = () => {
-    const startIndex = activeIndex % projects.length;
-    const visibleProjects = [];
-    for (let i = 0; i < 3; i++) {
-      const projectIndex = (startIndex + i) % projects.length;
-      visibleProjects.push(projects[projectIndex]);
-    }
-    return visibleProjects;
-  };
-  const visibleProjects = getVisibleProjects();
-
   return (
     <motion.div
       id="proyects"
-      className={styles.proyectsCont}
+      className={styles.projectsCont}
       variants={{
         hidden: { opacity: 0, y: 60 },
         visible: { opacity: 1, y: 0 },
@@ -47,33 +16,27 @@ const Proyects = ({ t }) => {
       transition={{ duration: 0.6, delay: 0.25 }}
     >
       <h3>{t("Proyectos")}</h3>
-      <section>
-        <button
-          className={styles.prevButton}
-          type="button"
-          onClick={handlePrev}
-        >
-          <FcPrevious size={"3rem"} style={{ color: "red" }} />
-        </button>
-
-        {visibleProjects.map((project, index) => (
-          <div
-            key={index}
-            className={`${styles.poyectCont} ${
-              index === 1 ? styles.active : ""
-            }`}
-          >
-            {project}
+      <article className={styles.projects}>
+        {projects?.map(({ image, name, text, tecnologys }, index) => (
+          <div className={styles.project} key={index}>
+            <img className={styles.projectImg} src={image} alt={name} />
+            <div className={styles.textCont}>
+              <div className={styles.text}>
+                <h4>{name}</h4>
+                <p>{text}</p>
+              </div>
+              <div className={styles.iconsCont}>
+                {tecnologys?.map(({ tecnology, icon }, index) => (
+                  <div className={styles.iconCont}>
+                    <img src={icon} alt={tecnology} />
+                    <p>{tecnology}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         ))}
-        <button
-          className={styles.nextButton}
-          type="button"
-          onClick={handleNext}
-        >
-          <FcNext size={"3rem"} />
-        </button>
-      </section>
+      </article>
     </motion.div>
   );
 };

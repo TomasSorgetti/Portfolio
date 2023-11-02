@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { useEffect, useRef } from 'react';
 //import components
 import Portfolio from './components/Portfolio/Portfolio';

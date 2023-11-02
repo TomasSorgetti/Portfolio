@@ -1,77 +1,60 @@
-.proyectsCont{
-    width: 80%;
-    margin: 150px auto;
+$fontColor: #ffffff;
+$textColor: #D1D1D1;
+
+@mixin column($direction,$gap) {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+.projectsCont{
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    padding: 20px;
     h3{
+        margin-bottom: 60px;
+        margin-top: -60px;
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
         font-family: 'Days One';
         font-style: normal;
-        font-weight: 400;
-        font-size: 56px;
-        line-height: 66px;
-        margin: 0;
-        text-transform: uppercase;
     }
-    section{
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-        .poyectCont{
-            width: 353px;
-                height: 450px;
-                background: radial-gradient(60.38% 60.38% at 39.23% 43.37%, #302856 0%, #080516 100%)
-                        , #151629;
-                border-radius: 20px;
-
-        }
-        .prevButton, .nextButton{
-            background-color: transparent;
-            border: none;
-        }
-        .active{
-            height: 530px;
-        }
-        .hidden{
-            display: none;
-        }
-        
-    }
-}
-@media screen and (max-width:1200px) {
-    .proyectsCont{
-        h3{
-            font-size: 46px;
-        }
-        section{
-            position: relative;
-            gap: 5px;
-            .poyectCont{
-                width: 300px;
-                height: 380px;
-                display: none;
-            }
-            .active{
-            height: 480px;
-            display: block;
-            }
-            .prevButton{
-                position: absolute;
-                left: -150px;
-            }
-            .nextButton{
-                position: absolute;
-                right: -150px;
-            }
-            .proyect{
-                width: 233px;
-                height: 300px;
-                .textCont{
+    .projects{
+        @include column(column,40px);
+        .project{
+            @include column(column,16px);            
+            .projectImg {
+                    width: 100%;
+                }
+            .textCont{
+                @include column(column,0px);
+                justify-content: space-between;
+                .text{
                     h4{
-                        font-size: 16px;
+                        font-size: 1.5rem;
+                        font-family: 'Days One';
+                        font-style: normal;
+                    }
+                    p{
+                        font-size: 1rem;
+                        font-weight: 300;
+                        line-height: 27px;
+                        color: $textColor;
+                    }
+                }
+                .iconsCont{
+                    @include column(row,20px);
+                    .iconCont{
+                        @include column(column,4px);
+                        align-items: center;
+                        justify-content: end;
+                        img{
+                            width: 31px;
+                        }
+                        p{
+                            margin: 0;
+                        }
                     }
                 }
             }
@@ -79,77 +62,64 @@
     }
 }
 
-@media screen and (max-width:980px) {
-    .proyectsCont {
-            h3 {
-                font-size: 46px;
-            }
-    
-            section {
-                flex-direction: column;
-                    gap: 30px;
-                .proyect {
-                    width: 203px;
-                    height: 270px;
-    
-                    .textCont {
-                        h4 {
-                            font-size: 16px;
-                        }
-                    }
+@media screen and (min-width:1024px){
+    .projectsCont{
+        padding: 40px;
+        .projects{
+            gap: 60px;
+            .project{
+                flex-direction: row;
+                .projectImg{
+                    width: 390px;
+                    height: 100%;
+                }
+                .textCont{
+                    padding-left: 16px;
                 }
             }
         }
+    }
 }
-@media screen and (max-width:760px){
-    .proyectsCont {
-            h3 {
-                font-size: 40px;
-            }
-    
-            section {
-                flex-direction: column;
-                gap: 30px; 
-                .prevButton {
-                        left: -80px;
-                    }
-                
-                    .nextButton {
-                        right: -80px;
-                    }
-                .proyect {
-                    width: 300px;
-                    height: 350px;
-    
-                    .textCont {
-                        h4 {
-                            font-size: 16px;
-                        }
-                    }
+@media screen and (min-width:1280px) {
+    .projectsCont {
+        padding: 100px;
+        .projects {
+            .project {
+                .projectImg {
+                    width: 400px;
                 }
-            }
-        }
-}
-@media screen and (max-width:640px) {
-    .proyectsCont {
-        section {
-            .prevButton {
-                left: -60px;
-            }
-            .nextButton {
-                right: -60px;
-            }
-        }}
-}
-@media screen and (max-width:400px) {
-    .proyectsCont {
-        section {
-            .prevButton {
-                left: -40px;
-            }
 
-            .nextButton {
-                right: -40px;
+                .textCont {
+                    padding-left: 24px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1440px) {
+    .projectsCont {
+        padding: 140px;
+        .projects {
+            .project {
+                .textCont {
+                    padding-left: 32px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1680px) {
+    .projectsCont {
+        padding: 230px;
+
+        .projects {
+            .project {
+                .projectImg{
+                    width: 460px;
+                }
+                .textCont {
+                    padding-left: 32px;
+                }
             }
         }
     }
