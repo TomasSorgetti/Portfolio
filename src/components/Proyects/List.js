@@ -1,4 +1,5 @@
 import LearningSpark from "../../assets/img/projects/LearningSpark.png"
+import wordGame from "../../assets/img/projects/wordGame.png"
 import LaCasadelLuthier from "../../assets/img/projects/LaCasadelLuthier.png";
 import VideoGames from "../../assets/img/projects/VideoGames.png";
 import TodoList from "../../assets/img/projects/TodoList.png";
@@ -31,6 +32,22 @@ const projects = [
       },
     ],
     link: "https://www.learning-spark.com/",
+  },
+  {
+    image: wordGame,
+    name: "Día de la Soberanía Nacional",
+    text: "Juego de palabras para una actividad escolar con la temática del día de la soberanía nacional",
+    tecnologys: [
+      {
+        tecnology: "React",
+        icon: react,
+      },
+      {
+        tecnology: "CSS",
+        icon: css,
+      },
+    ],
+    link: "https://dia-de-la-memoria-juego.vercel.app/",
   },
   {
     image: LaCasadelLuthier,
