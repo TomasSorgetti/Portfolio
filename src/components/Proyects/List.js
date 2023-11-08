@@ -36,7 +36,7 @@ const projects = [
   {
     image: wordGame,
     name: "Día de la Soberanía Nacional",
-    text: "Juego de palabras para una actividad escolar con la temática del día de la soberanía nacional",
+    text: "Juego de palabras para una actividad escolar con la temática del día de la soberanía nacional. (en desarrollo)",
     tecnologys: [
       {
         tecnology: "React",
