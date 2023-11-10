@@ -27,6 +27,7 @@ $textColor: #D1D1D1;
             text-decoration: none;           
             .projectImg {
                     width: 100%;
+                    filter: brightness(0.9);
                 }
             .textCont{
                 @include column(column,0px);
@@ -61,7 +62,11 @@ $textColor: #D1D1D1;
                     }
                 }
             }
+            &:hover .projectImg{
+                filter: brightness(1);
+            }
         }
+        
     }
 }
 
