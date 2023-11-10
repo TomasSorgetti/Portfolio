@@ -14,6 +14,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
+import AnimatedCursor from "react-animated-cursor"
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -71,6 +72,28 @@ function App() {
   },[])
   return (
     <div ref={ref} className="App" id="app" style={{ overflow: "hidden" }}>
+      <AnimatedCursor
+        innerSize={12}
+        outerSize={16}
+        color="157,33,103"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+          
+        ]}
+      />
       <NavBar t={t} i18n={i18n} />
       <img className="gradient1" src={gradient1} alt="" />
       <img className="gradient2" src={gradient2} alt="" />

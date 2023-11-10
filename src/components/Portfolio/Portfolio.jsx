@@ -22,6 +22,7 @@ import {
   useTransform,
 } from "framer-motion";
 
+
 function useParallax(value, distance) {
   return useTransform(value, [1, 0], [-distance, 0]);
 }
