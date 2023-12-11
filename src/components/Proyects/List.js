@@ -4,6 +4,7 @@ import LaCasadelLuthier from "../../assets/img/projects/LaCasadelLuthier.png";
 import VideoGames from "../../assets/img/projects/VideoGames.png";
 import TodoList from "../../assets/img/projects/TodoList.png";
 import PortfolioEuge from "../../assets/img/projects/PortfolioEuge.png";
+import Arnaldo from "../../assets/img/projects/Arnaldo.png";
 //icons
 import react from "../../assets/img/projects/icons/react.png"
 import redux from "../../assets/img/projects/icons/redux.png"
@@ -34,9 +35,25 @@ const projects = [
     link: "https://www.learning-spark.com/",
   },
   {
+    image: Arnaldo,
+    name: "Arnaldo Heladería",
+    text: "Hernaldo Heladería, un sitio web que desarrollé junto con un grupo, utilizando metodologías ágiles, que inició como un proyecto ficticio con la finalidad de agradar y poder ser vendido al cliente real.(en desarrollo)",
+    tecnologys: [
+      {
+        tecnology: "React",
+        icon: react,
+      },
+      {
+        tecnology: "Tailwind",
+        icon: tailwind,
+      },
+    ],
+    link: "https://arnaldo.vercel.app/",
+  },
+  {
     image: wordGame,
     name: "Día de la Soberanía Nacional",
-    text: "Juego de palabras para una actividad escolar con la temática del día de la soberanía nacional. (en desarrollo)",
+    text: "Juego de palabras para una actividad escolar que tenía como temática el día de la soberanía nacional.(en desarrollo)",
     tecnologys: [
       {
         tecnology: "React",
@@ -50,29 +67,9 @@ const projects = [
     link: "https://dia-de-la-memoria-juego.vercel.app/",
   },
   {
-    image: LaCasadelLuthier,
-    name: "La Casa del Luthier",
-    text: "La Casa del Luthier, un sitio web ficticio que utilicé para introducirme en el desarrollo web",
-    tecnologys: [
-      {
-        tecnology: "HTML",
-        icon: html,
-      },
-      {
-        tecnology: "CSS",
-        icon: css,
-      },
-      {
-        tecnology: "Sass",
-        icon: sass,
-      },
-    ],
-    link: "https://tomassorgetti.github.io/La-Casa-Del-Luthier",
-  },
-  {
     image: VideoGames,
     name: "Videogames",
-    text: "Proyecto Individual de Henry donde interactue con la API de videogames para obtener juegos y mostrarlos en cards, también cree una base de datos donde poder crear tu propio videojuego.",
+    text: "Proyecto Individual del bootcamp Henry donde interactue con la API de videogames para obtener juegos y mostrarlos, también cree una base de datos donde poder crear tu propio videojuego. Me ha servido para poder poner en práctica los conocimientos adquiridos en el bootcamp",
     tecnologys: [
       {
         tecnology: "React",

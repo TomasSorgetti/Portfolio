@@ -28,6 +28,7 @@ $textColor: #D1D1D1;
             .projectImg {
                     width: 100%;
                     filter: brightness(0.9);
+                    border-radius: 10px;
                 }
             .textCont{
                 @include column(column,0px);
