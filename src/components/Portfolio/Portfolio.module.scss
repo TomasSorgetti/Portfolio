@@ -190,7 +190,7 @@ $textColor: #D1D1D1;
         .aboutTitle{
             position: absolute;
             width: 250px;
-            top: 100px;
+            top: 70px;
             left: -170px;
             display: flex;
             align-items: center;
@@ -273,6 +273,7 @@ $textColor: #D1D1D1;
     }
 
 }
+
 @media screen and (max-width:1200px){
     .portfolio {
             .headerCont {
