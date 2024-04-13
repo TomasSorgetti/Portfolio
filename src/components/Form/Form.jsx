@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import emailjs from "emailjs-com";
-import styles from "./Form.module.scss"
+import styles from "./Form.module.scss";
 const EmailSend = () => {
   const [form, setForm] = useState({
     name: "",
@@ -42,7 +42,7 @@ const EmailSend = () => {
     }
     emailjs
       .sendForm(
-        "service_elu3x8h",
+        "service_ilfyop4",
         "template_bc0qyva",
         e.target,
         "4IAZoxJjzZX5E3IYV"
@@ -63,6 +63,13 @@ const EmailSend = () => {
         }
       })
       .catch((err) => {
+        Swal.fire({
+          position: "center",
+          icon: "error",
+          title: "Error",
+          text: "Opps! Something went wrong",
+          timer: 3000,
+        });
         console.log(err);
       });
   };
@@ -79,9 +86,7 @@ const EmailSend = () => {
           value={form.name}
         />
         {submited && form.name === "" && (
-          <span className={styles.errorField}>
-            Please fill in this field
-          </span>
+          <span className={styles.errorField}>Please fill in this field</span>
         )}
       </div>
       <div className={styles.emailCont}>

@@ -1,27 +1,19 @@
 import LearningSpark from "../../assets/img/projects/LearningSpark.png";
-import wordGame from "../../assets/img/projects/wordGame.png";
-import LaCasadelLuthier from "../../assets/img/projects/LaCasadelLuthier.png";
-import VideoGames from "../../assets/img/projects/VideoGames.png";
-import TodoList from "../../assets/img/projects/TodoList.png";
 import PortfolioEuge from "../../assets/img/projects/PortfolioEuge.png";
-import Arnaldo from "../../assets/img/projects/Arnaldo.png";
+import SmallTribesShop from "../../assets/img/projects/smalltribes.png";
 //icons
 import react from "../../assets/img/projects/icons/react.png";
-import redux from "../../assets/img/projects/icons/redux.png";
-import css from "../../assets/img/projects/icons/css.png";
-import sass from "../../assets/img/projects/icons/sass.png";
-import html from "../../assets/img/projects/icons/html.png";
 import tailwind from "../../assets/img/projects/icons/tailwind.png";
-import sequelize from "../../assets/img/projects/icons/sequelize.png";
-import express from "../../assets/img/projects/icons/express.png";
-import node from "../../assets/img/projects/icons/node.png";
-import postgresql from "../../assets/img/projects/icons/postgresql.png";
+import wordpress from "../../assets/img/projects/icons/wordpress.png";
+import woocommerce from "../../assets/img/projects/icons/woocommerce.png";
 
-const projects = [
+
+
+const projectsData = [
   {
     image: LearningSpark,
     name: "Learning Spark",
-    text: "Learning Spark, una pequeña empresa de tutores para exámenes internacionales. Trabajé a la par de una diseñadora para hacer, inicialmente, una landing page para captar clientes totalmente responsive.",
+    textKey: "firstProject",
     tecnologys: [
       {
         tecnology: "React",
@@ -35,25 +27,25 @@ const projects = [
     link: "https://www.learning-spark.com/",
   },
   {
-    image: Arnaldo,
-    name: "Arnaldo Heladería",
-    text: "Hernaldo Heladería, un sitio web que desarrollé junto con un grupo, utilizando metodologías ágiles, que inició como un proyecto ficticio con la finalidad de agradar y poder ser vendido al cliente real.(en desarrollo)",
+    image: SmallTribesShop,
+    name: "Small Tribes Shop",
+    textKey: "secondProject",
     tecnologys: [
       {
-        tecnology: "React",
-        icon: react,
+        tecnology: "Wordpress",
+        icon: wordpress,
       },
       {
-        tecnology: "Tailwind",
-        icon: tailwind,
+        tecnology: "WooCommerce",
+        icon: woocommerce,
       },
     ],
-    link: "https://arnaldo.vercel.app/",
+    link: "https://smalltribesshop.com/",
   },
   {
     image: PortfolioEuge,
     name: "Portfolio Designer",
-    text: "Portfolio de Diseñadora UX/UI. Lo utilicé para practicar Tailwind aplicando Mobile First.",
+    textKey: "thirdProject",
     tecnologys: [
       {
         tecnology: "React",
@@ -68,4 +60,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export default projectsData;
