@@ -17,7 +17,7 @@ const translations = {
       secondProject:
         "Small Tribes Shop is a WordPress e-commerce site that I collaborated on, aiming to offer products for an online game called ARK.",
       thirdProject:
-        "UX/UI Designer Portfolio. I used it to practice Tailwind, applying Mobile First principles.",
+        "CRUD Challenge using node.js and posgresql. I learn how to make an excel download, and progress in learn jwt authentication & authorization, error handle and testing",
     },
   },
   es: {
@@ -38,7 +38,7 @@ const translations = {
       secondProject:
         "Small Tribes Shop es un ecommerce hecho en wordpress en el que colaboré el cual pretende ofrecer productos para un juego online llamado ARK",
       thirdProject:
-        "Portfolio de Diseñadora UX/UI. Lo utilicé para practicar Tailwind aplicando Mobile First.",
+        "CRUD Challenge usando Node.js y posgresql. Aprendí a hacer descargas con excel desde el backend y progresé en mi aprendizaje sobre autenticación y autorización con jwt, manejo de errores y testing",
     },
   },
   lng: "es",

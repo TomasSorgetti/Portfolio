@@ -22,7 +22,6 @@ import {
   useTransform,
 } from "framer-motion";
 
-
 function useParallax(value, distance) {
   return useTransform(value, [1, 0], [-distance, 0]);
 }
@@ -45,7 +44,17 @@ const Portfolio = ({ t }) => {
     }
   }, [isInView]);
 
-  const items = ["HTMl5","CSS3","Javascript","Tailwind","React","Redux","Node","Express","Sequelize"]
+  const items = [
+    "HTMl5",
+    "CSS3",
+    "Javascript",
+    "Tailwind",
+    "React",
+    "Redux",
+    "Node",
+    "Express",
+    "Sequelize",
+  ];
   return (
     <div ref={ref} className={styles.portfolio}>
       <section className={styles.headerCont}>
@@ -233,6 +242,7 @@ const Portfolio = ({ t }) => {
         whileInView="visible"
         transition={{ duration: 0.6, delay: 0.15 }}
       >
+        <h3>{t("Contacto")}</h3>
         <EmailSend />
       </motion.section>
     </div>

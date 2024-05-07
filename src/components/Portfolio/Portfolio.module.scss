@@ -184,7 +184,7 @@ $textColor: #D1D1D1;
         justify-content: center;
         align-items: center;
         width: 60%;
-        margin: 160px auto;
+        margin: 200px auto 0px auto;
         gap: 10px;
         position: relative;
         .aboutTitle{
@@ -218,9 +218,17 @@ $textColor: #D1D1D1;
     }
     .contact{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 40px;
+        gap: 80px;
+        h3{
+        font-family: 'Days One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
         .contactLinks{
             position: relative;
             width: 630px;
@@ -315,6 +323,10 @@ $textColor: #D1D1D1;
                 font-size: 18px;
             }
         }
+        .contact h3{
+            font-size: 2rem;
+            margin-top: 80px;
+        }
         }
 }
 @media screen and (max-width:980px){
@@ -367,13 +379,14 @@ $textColor: #D1D1D1;
         //     display: flex;
         // }
         .about{
+            margin-bottom: 80px;
             .aboutTitle{
                 top: 150px;
 
             }
         }
         .contact{
-            margin-top: 250px;
+            margin-top: 100px;
             .contactLinks{
                 h3{
                     top: -180px;
