@@ -7,11 +7,10 @@ import Navbar from "react-bootstrap/Navbar";
 const NavBar = ({ t, i18n }) => {
   const handleClick = (e, prop) => {
     e.preventDefault();
-    localStorage.setItem("lang",prop)
+    localStorage.setItem("lang", prop);
     i18n.changeLanguage(prop);
   };
 
-  
   return (
     <Navbar className={styles.navCont} expand="lg" variant="dark">
       <Container>
@@ -22,7 +21,7 @@ const NavBar = ({ t, i18n }) => {
         <Navbar.Collapse id="basic-navbar-nav" className={styles.navCollapse}>
           <Nav className={styles.navLinks}>
             <Nav.Link className={styles.link} href="#buttonContact">
-              {t("Sobre_Mí")}
+              {t("SobreMí")}
             </Nav.Link>
             <Nav.Link className={styles.link} href="#proyects">
               {t("Proyectos")}

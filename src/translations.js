@@ -2,7 +2,7 @@ const translations = {
   en: {
     translation: {
       Desarrollador: "Full Stack Developer",
-      Sobre_Mí: "About",
+      SobreMí: "About",
       Proyectos: "Projects",
       Contacto: "Contact",
       Contactame: "Contact",
@@ -23,7 +23,7 @@ const translations = {
   es: {
     translation: {
       Desarrollador: "Desarrollador Full Stack",
-      Sobre_Mí: "Sobre Mí",
+      SobreMí: "Sobre Mí",
       Proyectos: "Proyectos",
       Contacto: "Contacto",
       Contactame: "Contactame",

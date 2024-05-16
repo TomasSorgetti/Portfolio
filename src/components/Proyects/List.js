@@ -10,6 +10,7 @@ import node from "../../assets/img/projects/icons/node.png";
 import postgresql from "../../assets/img/projects/icons/postgresql.png";
 import sequelize from "../../assets/img/projects/icons/sequelize.png";
 
+
 const projectsData = [
   {
     image: LearningSpark,
