@@ -2,13 +2,13 @@ import styles from "./Proyects.module.scss";
 import { motion } from "framer-motion";
 import projectsData from "./List";
 
-const Proyects = ({ t }) => {
+const Proyects = () => {
   return (
     <div id="proyects" className={styles.projectsCont}>
-      <h3>{t("Proyectos")}</h3>
+      <h3>Proyectos</h3>
       <article className={styles.projects}>
         {projectsData?.map(
-          ({ image, name, textKey, tecnologys, link }, index) => (
+          ({ image, name, description, tecnologys, link }, index) => (
             <motion.a
               variants={{
                 hidden: { opacity: 0, x: -70 },
@@ -26,7 +26,7 @@ const Proyects = ({ t }) => {
               <div className={styles.textCont}>
                 <div className={styles.text}>
                   <h4>{name}</h4>
-                  <p>{t(textKey)}</p>
+                  <p>{description}</p>
                 </div>
                 <div className={styles.iconsCont}>
                   {tecnologys?.map(({ tecnology, icon }, index) => (

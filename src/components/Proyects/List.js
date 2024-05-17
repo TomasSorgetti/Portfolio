@@ -10,12 +10,12 @@ import node from "../../assets/img/projects/icons/node.png";
 import postgresql from "../../assets/img/projects/icons/postgresql.png";
 import sequelize from "../../assets/img/projects/icons/sequelize.png";
 
-
 const projectsData = [
   {
     image: LearningSpark,
     name: "Learning Spark",
-    textKey: "firstProject",
+    description:
+      "Learning Spark, una pequeña empresa de tutores para exámenes internacionales. Trabajé a la par de una diseñadora para hacer, inicialmente, una landing page para captar clientes totalmente responsive.",
     tecnologys: [
       {
         tecnology: "React",
@@ -31,7 +31,8 @@ const projectsData = [
   {
     image: SmallTribesShop,
     name: "Small Tribes Shop",
-    textKey: "secondProject",
+    description:
+      "Small Tribes Shop es un ecommerce hecho en wordpress en el que colaboré el cual pretende ofrecer productos para un juego online llamado ARK",
     tecnologys: [
       {
         tecnology: "Wordpress",
@@ -47,7 +48,8 @@ const projectsData = [
   {
     image: challenge,
     name: "Node.js Challenge",
-    textKey: "thirdProject",
+    description:
+      "CRUD Challenge usando Node.js y posgresql. Aprendí a hacer descargas con excel desde el backend y progresé en mi aprendizaje sobre autenticación y autorización con jwt, manejo de errores y testing",
     tecnologys: [
       {
         tecnology: "Node.js",

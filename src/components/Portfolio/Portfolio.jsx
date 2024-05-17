@@ -71,7 +71,7 @@ const Portfolio = ({ t }) => {
         >
           <h1>Tomás Sorgetti</h1>
           <div className={styles.underTitle}>
-            <h2 className={styles.coloredTitle}>{t("Desarrollador")}</h2>
+            <h2 className={styles.coloredTitle}>Full Stack Developer</h2>
           </div>
         </motion.div>
         <div className={styles.header}>
@@ -131,8 +131,7 @@ const Portfolio = ({ t }) => {
             <img className={styles.imageCont} src={frontImage} alt="" />
             <button>
               <a id="buttonContact" href="#contact">
-                {" "}
-                {t("Contactame")}
+                Contactame
               </a>
             </button>
           </div>
@@ -215,22 +214,23 @@ const Portfolio = ({ t }) => {
         transition={{ duration: 0.6, delay: 0.45 }}
       >
         <div className={styles.aboutTitle}>
-          <h3>{t("Sobre_Mí")}</h3>
+          <h3>Sobre Mí</h3>
         </div>
         <div>
           <p>
-            {t("TXT1")}
-            {t("TXT2")}
-            {t("TXT3")}
+            Soy un desarrollador web full stack con un enfoque especial en el
+            front-end. Mi curiosidad y deseo de perfeccionamiento me condujo a
+            convertirme en un luthier y, posteriormente, a involucrarme en el
+            desarrollo de sitios web.
           </p>
           <p>
-            {t("TXT4")}
-            {t("TXT5")}
-            {t("TXT6")}
+            Mi objetivo es crear experiencias en línea excepcionales para los
+            usuarios, centrándome en la usabilidad, el diseño atractivo y la
+            optimización del rendimiento.
           </p>
         </div>
       </motion.section>
-      <Proyects t={t} />
+      <Proyects />
       <motion.section
         className={styles.contact}
         id="contact"
@@ -242,7 +242,7 @@ const Portfolio = ({ t }) => {
         whileInView="visible"
         transition={{ duration: 0.6, delay: 0.15 }}
       >
-        <h3>{t("Contacto")}</h3>
+        <h3>Contacto</h3>
         <EmailSend />
       </motion.section>
     </div>

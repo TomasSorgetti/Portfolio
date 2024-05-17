@@ -56,7 +56,7 @@ function App() {
           ".link",
         ]}
       />
-      <NavBar t={t} i18n={i18n} />
+      <NavBar/>
       <img className="gradient1" src={gradient1} alt="" />
       <img className="gradient2" src={gradient2} alt="" />
       <img className="gradient3" src={gradient3} alt="" />
