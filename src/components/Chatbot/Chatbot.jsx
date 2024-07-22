@@ -32,7 +32,9 @@ const ChatbotComponent = () => {
   const StyledChatBot = styled(ChatBot)`
   .rsc-ts-bubble {
     max-width: 80%;
-  }
+    }
+  .rsc-os-option-element{
+  background-color: #170e3c;}
 `;
   return (
     <div className={styles.chatbotCont}>
