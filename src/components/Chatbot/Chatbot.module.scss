@@ -32,12 +32,12 @@
     z-index: 5;
 }
 
-@media screen and (min-width:640px){
+@media screen and (max-width:640px){
     .chatbot{
         top: 0;
     }
 }
-@media screen and (min-width:360px){
+@media screen and (max-width:360px){
     .chatbot{
         right: 5%;
         width: 90%;
