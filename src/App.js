@@ -14,8 +14,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
-import AnimatedCursor from "react-animated-cursor";
+// import AnimatedCursor from "react-animated-cursor";
 import translations from "./translations";
+import ChatbotComponent from "./components/Chatbot/Chatbot";
 
 i18n.use(initReactI18next).init({
   resources: translations,
@@ -35,7 +36,8 @@ function App() {
   }, []);
   return (
     <div ref={ref} className="App" id="app" style={{ overflow: "hidden" }}>
-      <AnimatedCursor
+      <ChatbotComponent/>
+      {/* <AnimatedCursor
         innerSize={12}
         outerSize={16}
         color="157,33,103"
@@ -55,8 +57,8 @@ function App() {
           "button",
           ".link",
         ]}
-      />
-      <NavBar/>
+      /> */}
+      <NavBar />
       <img className="gradient1" src={gradient1} alt="" />
       <img className="gradient2" src={gradient2} alt="" />
       <img className="gradient3" src={gradient3} alt="" />
