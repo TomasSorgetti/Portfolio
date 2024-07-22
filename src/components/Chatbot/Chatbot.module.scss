@@ -34,12 +34,9 @@
 
 @media screen and (max-width:640px){
     .chatbot{
-        top: 0;
+        display: none;
     }
-}
-@media screen and (max-width:360px){
-    .chatbot{
-        right: 5%;
-        width: 90%;
+    .button{
+        display: none;
     }
 }
