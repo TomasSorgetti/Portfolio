@@ -5,6 +5,7 @@ import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 import styles from "./Chatbot.module.scss";
 import { steps } from "./ChatbotSteps";
+import styled from 'styled-components';
 
 const theme = {
   background: "rgba(8, 5, 22, 0.8);",
@@ -28,14 +29,18 @@ const ChatbotComponent = () => {
     };
     openChat();
   }, []);
-
+  const StyledChatBot = styled(ChatBot)`
+  .rsc-ts-bubble {
+    max-width: 80%;
+  }
+`;
   return (
     <div className={styles.chatbotCont}>
       <button className={styles.button} onClick={() => setIsOpen(!isOpen)}>
         Chat
       </button>
       <ThemeProvider theme={theme}>
-        <ChatBot
+        <StyledChatBot
           className={`${styles.chatbot} ${isOpen ? styles.open : ""}`}
           steps={steps}
           headerTitle="Chatbot"
