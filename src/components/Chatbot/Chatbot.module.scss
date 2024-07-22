@@ -31,3 +31,16 @@
     transition: 1s ease;
     z-index: 5;
 }
+
+@media screen and (min-width:640px){
+    .chatbot{
+        bottom: 180px;
+    }
+}
+@media screen and (min-width:360px){
+    .chatbot{
+        bottom: 200px;
+        right: 5%;
+        width: 90%;
+    }
+}

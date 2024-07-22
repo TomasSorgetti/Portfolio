@@ -30,7 +30,7 @@ const ChatbotComponent = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.chatbotCont}>
       <button className={styles.button} onClick={() => setIsOpen(!isOpen)}>
         Chat
       </button>

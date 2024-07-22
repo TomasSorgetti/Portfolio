@@ -64,7 +64,7 @@ const projectsData = [
         icon: sequelize,
       },
     ],
-    link: "https://github.com/TomasSorgetti/challenge-n365-server",
+    link: "https://github.com/TomasSorgetti?tab=repositories",
   },
 ];
 
