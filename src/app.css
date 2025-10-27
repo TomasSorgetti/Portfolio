@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+:root {
+	--background: #000000;
+	--text-primary: #ffffff;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-background-bis: #1c1c1c;
+
+	--color-primary: #e26136;
+
+	--color-border: #313131;
+
+	--color-text-primary: var(--text-primary);
+	--color-text-secondary: #acacac;
+	--color-text-invert: #000000;
+}
+body {
+	background-color: var(--color-background);
+	color: var(--text-primary);
+}
